@@ -5,6 +5,26 @@
     box-sizing: border-box;
 }
 
+/* assign the color to a variable */
+:root {
+    --color1: #D9D9D9;
+    --color_t: #D1512D;
+    --color2: #0D0D0D;
+
+    --bg: #FFFFFF;
+    /* --color1: #0066CC;
+    --color_t: #D1512D;
+    --color3: #000033;
+    --color2: #B6BBC4;
+    --bg: #e8edf2; */
+    /*100F0F
+    93B1A6
+    D1512D
+    0F3D3E
+    DDE6ED
+    */
+}
+
 /* bunu yapma amacımız rem değerini kullanmak. Rem yapısı sayesinde telefon, bilgisyar için ayrı ayrı font büyüklüğü vermemize gerek kalmayacak. */
 html {
     font-size: 11px;
@@ -12,13 +32,17 @@ html {
 
 body {
     font-family: 'Courier New', Courier, monospace;
-    background-color: #789789;
-    /*100F0F*/
+    background-color: var(--bg);
     text-align: left;
     line-height: 1.8;
-    color: #100F0F;
-    /*93B1A6*/
+    color: var(--bg);
     font-size: 1.6rem;
+    width: 100%;
+}
+
+/* linklerin altı çizili vb. özel yapıları kaldırır. */
+a {
+    text-decoration: none;
 }
 
 /* navbar position and color */
@@ -26,21 +50,90 @@ body {
     position: fixed;
     top: 0;
     width: 100%;
-    background-color: #100F0F;
-    border-bottom: #D1512D solid;
-    border-right: #D1512D solid;
+    justify-content: center;
+    align-items: center;
+    min-height: 90px;
+    background-color: var(--color2);
+    border-bottom: var(--color_t) solid;
+
+}
+
+/* hamburger menu for responsive */
+
+.nav-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .nav_link {
-    color: #93B1A6;
+    color: var(--bg);
     transition: 0.3s;
 }
 
 .nav_link:hover {
-    color: #D1512D;
-    /* D1512D */
+    color: var(--color_t);
     transition: 0.7s;
 }
+
+/* BODY DIV */
+.div_dark {
+    background-color: var(--color2);
+    color: var(--bg);
+    width: 100%;
+    margin: 0 auto;
+    min-height: 20rem;
+
+}
+
+.div_light {
+    background-color: var(--bg);
+    color: var(--color2);
+    font-weight: bolder;
+    min-height: 20rem;
+
+}
+
+.div_other {
+    background-color: var(--color_t);
+    color: var(--color1);
+    border: 2px solid var(--color1);
+    padding: 0.75rem;
+}
+
+.div_parag {
+    margin-left: 10%;
+    margin-right: 10%;
+    text-align: left;
+}
+
+/* div header */
+.div_header {
+    position: relative;
+    text-align: center;
+
+}
+
+.div_header h2 {
+    font-size: 32px;
+    font-weight: 500;
+    margin-bottom: 6rem;
+    text-transform: uppercase;
+    padding-top: 4rem;
+    color: var(--color_t);
+}
+
+/* Education cards */
+.education_card{
+    max-width: 32rem;
+    background-color: var(--color1);
+    color: var(--color2);
+    text-align: center;
+    padding: 2rem;
+    bottom: 2rem;
+    box-shadow:0 0px 5px var(--color_t);
+}
+
 
 /* Home div */
 #home_section {
@@ -53,49 +146,41 @@ body {
     height: 90rem;
 }
 
-/* section title */
 
-#project_section {
-    background-color: #D1512D;
-    color: #100F0F;
-    width: 100%;
+/* home photo paragraph */
+/* #parag_home{
 
-}
-
-/* linklerin altı çizili vb. özel yapıları kaldırır. */
-a {
-    text-decoration: none;
-}
-
-/* resume div */
-#div_resume {
-    width: 100%;
-
-}
+} */
 
 /* resume first photo */
 
 #img_resume1 {
     width: fit-content;
-    border-radius: 2%;
-    border: #0F3D3E solid;
+    border: var(--color2) solid;
     margin-top: 4rem;
     margin-bottom: 4rem;
 }
 
 /* resume > education */
-.education_title{
+.education_title {
     padding-top: 1rem;
     text-align: center;
 }
-/* .col-7{
-    background-color: #100F0F;
-    color: #93B1A6;
-    border-radius: 5%;
-    padding: 5rem;
-} */
+
+
 .parag_1 {
     text-align: left;
-    margin-top: 2.5rem;
+    margin-top: 4rem;
     padding-left: 2rem;
+
+
+}
+
+/* div line */
+.div_line {
+    background-color: var(--color_t);
+    width: 100%;
+    height: 0.2rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
 }
