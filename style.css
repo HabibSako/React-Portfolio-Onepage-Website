@@ -1,0 +1,101 @@
+/* common config */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* bunu yapma amacımız rem değerini kullanmak. Rem yapısı sayesinde telefon, bilgisyar için ayrı ayrı font büyüklüğü vermemize gerek kalmayacak. */
+html {
+    font-size: 11px;
+}
+
+body {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #789789;
+    /*100F0F*/
+    text-align: left;
+    line-height: 1.8;
+    color: #100F0F;
+    /*93B1A6*/
+    font-size: 1.6rem;
+}
+
+/* navbar position and color */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #100F0F;
+    border-bottom: #D1512D solid;
+    border-right: #D1512D solid;
+}
+
+.nav_link {
+    color: #93B1A6;
+    transition: 0.3s;
+}
+
+.nav_link:hover {
+    color: #D1512D;
+    /* D1512D */
+    transition: 0.7s;
+}
+
+/* Home div */
+#home_section {
+    /* background photo */
+    background-image: url(img/background_img/drone.jpg);
+    background-size: cover;
+    margin-top: -5px;
+    padding-top: 0;
+    width: 100%;
+    height: 90rem;
+}
+
+/* section title */
+
+#project_section {
+    background-color: #D1512D;
+    color: #100F0F;
+    width: 100%;
+
+}
+
+/* linklerin altı çizili vb. özel yapıları kaldırır. */
+a {
+    text-decoration: none;
+}
+
+/* resume div */
+#div_resume {
+    width: 100%;
+
+}
+
+/* resume first photo */
+
+#img_resume1 {
+    width: fit-content;
+    border-radius: 2%;
+    border: #0F3D3E solid;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+}
+
+/* resume > education */
+.education_title{
+    padding-top: 1rem;
+    text-align: center;
+}
+/* .col-7{
+    background-color: #100F0F;
+    color: #93B1A6;
+    border-radius: 5%;
+    padding: 5rem;
+} */
+.parag_1 {
+    text-align: left;
+    margin-top: 2.5rem;
+    padding-left: 2rem;
+}
