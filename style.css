@@ -3,21 +3,24 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 /* assign the color to a variable */
 :root {
-    --color1: #D9D9D9;
-    --color_t: #D1512D;
-    --color2: #0D0D0D;
-
+    --color1: #F3F1F6;
+    --color_t: #51239F;
+    --color2: #F8FAFB;
+    --color3: #4B3FE4;
+    --color4: #0D0D0D;
     --bg: #FFFFFF;
-    /* --color1: #0066CC;
+    --shadow-color: rgba(0, 0, 0, .2);
+        /* --color1: #0066CC;
     --color_t: #D1512D;
     --color3: #000033;
     --color2: #B6BBC4;
     --bg: #e8edf2; */
-    /*100F0F
+        /*100F0F
     93B1A6
     D1512D
     0F3D3E
@@ -31,7 +34,7 @@ html {
 }
 
 body {
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Poppins', sans-serif;
     background-color: var(--bg);
     text-align: left;
     line-height: 1.8;
@@ -44,7 +47,14 @@ body {
 a {
     text-decoration: none;
 }
+/*************************************************************/
+/* header and navbar*/
+.header{
+    
+}
 
+
+/*************************************************************/
 /* navbar position and color */
 .navbar {
     position: fixed;
@@ -78,27 +88,40 @@ a {
 
 /* BODY DIV */
 .div_dark {
-    background-color: var(--color2);
-    color: var(--bg);
+    background-color: var(--color4);
+    color: var(--color2);
     width: 100%;
     margin: 0 auto;
-    min-height: 20rem;
+    padding-top: 5rem;
+    padding-bottom: 7rem;
 
 }
 
-.div_light {
+.div_dark2 {
     background-color: var(--bg);
-    color: var(--color2);
-    font-weight: bolder;
+    color: var(--color4);
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 5rem;
+    padding-bottom: 7rem;
+
+}
+
+
+.div_light {
+    background-color: var(--color1);
+    color: var(--color4);
     min-height: 20rem;
+    padding-bottom: 7rem;
 
 }
 
 .div_other {
-    background-color: var(--color_t);
+    background-color: var(--color3);
     color: var(--color1);
-    border: 2px solid var(--color1);
-    padding: 0.75rem;
+    padding: 0.2rem;
+    font-weight: bolder;
+
 }
 
 .div_parag {
@@ -116,24 +139,26 @@ a {
 
 .div_header h2 {
     font-size: 32px;
-    font-weight: 500;
     margin-bottom: 6rem;
     text-transform: uppercase;
     padding-top: 4rem;
-    color: var(--color_t);
+    color: var(--color4);
+    font-weight: bolder;
 }
 
-/* Education cards */
-.education_card{
-    max-width: 32rem;
-    background-color: var(--color1);
-    color: var(--color2);
-    text-align: center;
-    padding: 2rem;
-    bottom: 2rem;
-    box-shadow:0 0px 5px var(--color_t);
+/* hr decoration */
+h2 hr {
+    width: 20%;
+    margin-left: 40%;
+    margin-right: 40%;
 }
 
+h5 hr {
+    width: 70%;
+    margin-left: 15%;
+    margin-right: 15%;
+    color: var(--color3);
+}
 
 /* Home div */
 #home_section {
@@ -146,25 +171,87 @@ a {
     height: 90rem;
 }
 
-
-/* home photo paragraph */
-/* #parag_home{
-
-} */
-
-/* resume first photo */
-
+/* about me */
 #img_resume1 {
     width: fit-content;
     border: var(--color2) solid;
     margin-top: 4rem;
     margin-bottom: 4rem;
+    border-radius: 10px;
 }
 
-/* resume > education */
+#img_resume1:hover {
+    border: var(--color_t) solid;
+}
+
+/* RESUME */
+
+/* Education cards */
 .education_title {
     padding-top: 1rem;
     text-align: center;
+}
+
+.education_card {
+    background-color: var(--bg);
+    margin-bottom: 3rem;
+    padding: 2rem;
+    height: 260px;
+    border-radius: 10px;
+}
+
+.education_card:hover {
+    border: 1px solid var(--color3);
+
+}
+
+/* Experience Card */
+.experience_card {
+    background-color: var(--color1);
+    padding-bottom: 2rem;
+    padding: 2rem;
+    border-radius: 10px;
+    width: 99%;
+}
+
+.experience_card:hover {
+    border: 2px solid var(--color3);
+
+}
+
+.experience_card div div img {
+    height: 30vh;
+    width: 45vh;
+    border-radius: 5px;
+    border: 1px solid var(--color3);
+}
+
+.experience_card ul li p {
+    text-align: left;
+    font-weight: lighter;
+}
+
+/* skills card */
+.skills_card {
+    border: 1px solid var(--color1);
+    text-align: left;
+}
+
+/* li icons */
+.skills_card ul li i {
+    color: var(--color3);
+}
+
+.skills_card ul li {
+    padding-left: 3rem;
+    padding-top: 1rem;
+    font-weight: 700;
+    font-size: x-large;
+}
+
+.skills_card ul {
+    padding-left: 10rem;
+
 }
 
 
@@ -172,7 +259,7 @@ a {
     text-align: left;
     margin-top: 4rem;
     padding-left: 2rem;
-
+    font-weight: lighter;
 
 }
 
@@ -183,4 +270,10 @@ a {
     height: 0.2rem;
     margin-top: 1rem;
     margin-bottom: 1rem;
+}
+
+/* rotating logos */
+.skill_logo {
+    width: 100%;
+    text-align: center;
 }
