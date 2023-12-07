@@ -29,19 +29,33 @@
 
     <!-- responsive header design -->
     <header class="header">
-        <a href="#" class="logo">Portfolio</a>
+        <a href="#" class="logo" style="margin-right: 35%;"><i class='bx bxs-planet bx-lg' ></i> Portfolio.</a>
         <nav class="navbar">
-            <a href="#home">Anasayfa</a>
+            <a href="#home" class="active">Anasayfa</a>
             <a href="#about">Hakkımda</a>
             <a href="#resume">Özgeçmiş</a>
             <a href="#projects">Projeler</a>
             <a href="#contact">İletişim</a>
         </nav>
     </header>
+    <section class="home" id="home">
+        <div class="home-content">
+            <h3>Merhaba, ben</h3>
+            <h1>Habib Şako</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero explicabo mollitia quaerat ea quibusdam
+                voluptatum nihil distinctio a.</p>
+            <div class="social-media">
+                <a href="#"><i class='bx bxl-linkedin-square bx-lg'></i></a>
+                <a href="#"><i class='bx bxl-github bx-lg'></i></a>
+                <a href="#"><i class='bx bxl-gitlab bx-lg'></i></a>
+            </div>
+            <a href="#" class="btn">Özgeçmiş</a>
+        </div>
+    </section>
 
     <!-- navbar start -->
 
-    <nav id="navbar" class="navbar navbar-expand-lg">
+    <!-- <nav id="navbar" class="navbar navbar-expand-lg">
         <div class="container-fluid">
             <a class="navbar-brand mb-0 h1" href="#">
                 <img src="img/icon/1-48-t.png" alt="Habib Şako">
@@ -49,8 +63,8 @@
             <h2>Habib</h2>
             <div class="collapse navbar-collapse d-flex justify-content-end" id="navbarSupportedContent">
                 <ul class="nav-menu">
-                    <!-- Home -->
-                    <li class="nav-item px-4">
+                    <!- Home -->
+    <!-- <li class="nav-item px-4">
                         <a class="nav_link " aria-current="page" href="#" ;>Anasayfa</a>
                     </li>
                     <li class="nav-item px-4">
@@ -64,19 +78,19 @@
                     </li>
                     <li class="nav-item px-4">
                         <a class="nav_link" aria-current="page" href="#" ;>İletişim</a>
-                    </li>
+                    </li> -->
 
-                    <!-- login and register button -->
+    <!-- login and register button -->
 
-                    <li class="nav-item px-4">
-                        <!-- login -->
+    <!-- <li class="nav-item px-4">
+                        login
                         <button type="button" class="btn btn-warning btn-sm mt-0" style="background-color: #D1512D;">
                             <a href="#" data-bs-toggle="modal" data-bs-target="#login"
                                 style="background-color: #D1512D; color: black; text-decoration: none; font-size: 16px; font-weight: bolder;">Giriş
                                 Yap</a>
                         </button>
-                        <!-- register -->
-                        <button type="button" class="btn btn-warning btn-sm mt-0" style="background-color: #D1512D;">
+                        < register -->
+    <!-- <button type="button" class="btn btn-warning btn-sm mt-0" style="background-color: #D1512D;">
                             <a href="#" data-bs-toggle="modal" data-bs-target="#register"
                                 style="background-color: #D1512D; color: black; text-decoration: none; font-size: 16px; font-weight: bolder;">Kayıt
                                 Ol</a>
@@ -86,7 +100,7 @@
 
             </div>
         </div>
-    </nav>
+    </nav>  -->
 
     <!-- navbar end -->
 
@@ -94,14 +108,11 @@
 
         <!-- Home section-->
         <section>
-            <div id="home_section">
-                <p class="parag_home"></p>
-            </div>
             <div class="div_dark2">
                 <div class="div_parag">
                     <div class="container-fluid">
                         <div class="row">
-                            <div id="parag_resume" class="col-7" style=" text-align: center;">
+                            <div id="parag_resume" class="col-7 " style=" text-align: center;">
                                 <h1 style="margin-top: 5rem; margin-left: 4rem;"><b>Merhaba Ben Habib,</b>
                                 </h1>
                                 <p class="parag_1">İnönü üniversitesi 4. sınıf bilgisayar mühendisliği öğrencisiyim.
@@ -115,8 +126,9 @@
                                     sahibim.
                                     C, Java, Html5, CSS3, Javascript, NodeJs ve ReactJS dilleri ile frontend, backend ve
                                     ilgimi çeken diğer alanlarda gelişmeye devam ediyorum. </p>
+                                    
                             </div>
-                            <div class="col-5">
+                            <div class="col-md-5 col-sm-12">
                                 <img id="img_resume1" src="img/img/design3.jpg" alt="Remember Why You Started">
                             </div>
                         </div>
@@ -146,7 +158,8 @@
                                             <hr>
                                         </i></b></h5>
 
-                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing.</p>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae quo autem fugiat
+                                    accusantium natus, consequatur  </p>
                             </div>
                         </div>
                         <div class="col-md-4 col-sm-6">
@@ -156,7 +169,8 @@
                                             <hr>
                                         </i></b></h5>
 
-                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing.</p>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae quo autem fugiat
+                                    accusantium natus, consequatur</p>
                             </div>
                         </div>
                         <div class="col-md-4 col-sm-6">
@@ -166,7 +180,8 @@
                                     <hr>
                                 </h5>
 
-                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing.</p>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae quo autem fugiat
+                                    accusantium natus, consequatur </p>
                             </div>
                         </div>
                     </div>
@@ -235,8 +250,7 @@
                     <div class="row">
                         <div class="col-md-6 col-sm-12">
                             <div class="skills_card">
-                                <h2 style="margin-left: 6rem;">Yazılım Becerilerim
-
+                                <h2 style="margin-left: 6rem; ">Yazılım Becerilerim                
                                 </h2>
                                 <ul class="bx-ul">
                                     <li><i class='bx bx-caret-right bx-fade-right bx-md '></i>Html5</li>
@@ -305,13 +319,40 @@
         </div>
 
         <!-- Blog post -->
-        <section></section>
+        <section>
+            <div class=div_dark2">
+                <div class="div_parag">
+                    <div class="div_header">
+                        <h2> Hizmetler</h2>
+                            <hr>
+                        </h2>
+                    </div>
+                    <div class="row">
+                        <div class="class="col-md-4 col-sm-6"">
+                            <p>Lorem ipsum dolor sit amet.</p>
+                        </div>
+                        <div class="class="col-md-4 col-sm-6"">
+                            <p>Lorem ipsum dolor sit amet.</p>
+                        </div>
+                        <div class="class="col-md-4 col-sm-6"">
+                            <p>Lorem ipsum dolor sit amet.</p>
+                        </div>
+                    </div>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni, perspiciatis?,
+                </div>
+            </div>
+        </section>
 
         <!-- Projects -->
         <section>
             <div class="div_other">
                 <div class="div_parag">
-                    <div class="row row-cols-1 row-cols-md-3 g-4">
+                    <div class="div_header">
+                        <h2>Projelerim ve Çalışmalarım
+                            <hr>
+                        </h2>
+                    </div>
+                    <div class="row row-cols-1 row-cols-md-3 g-4 mb-5">
                         <div class="col">
                             <div class="card h-100">
                                 <img src="img/img/wardpress.jpg" class="card-img-top" alt="...">
@@ -351,6 +392,26 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="col">
+                            <div class="card h-100">
+                                <img src="img/img/design3.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">This is a longer card with supporting text below as a natural
+                                        lead-in to additional content.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card h-100">
+                                <img src="img/img/mobildesign.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">This is a longer card with supporting text below as a natural
+                                        lead-in to additional content. This content is a little bit longer.</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -358,10 +419,6 @@
 
         <!-- Contact -->
         <section>
-
-
-
-
 
         </section>
         <section></section>
