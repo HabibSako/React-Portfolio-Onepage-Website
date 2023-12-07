@@ -139,4 +139,4 @@ npm start
 ``` 
 ## Author and Acknowledgments
 - Author : [@HabibSako](https://github.com/HabibSako/)
-- I would like to thank [@hamitmizrak](https://github.com/hamitmizrak/) and [@BTKAkademi](https://twitter.com/BTKAkademi) for their contributions and efforts.
+- I would like to thank [@hamitmizrak](https://github.com/hamitmizrak/) and [@BTKAkademi](https://twitter.com/BTKAkademi) for their contributions and efforts.  
