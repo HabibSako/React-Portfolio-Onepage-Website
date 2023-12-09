@@ -1,13 +1,31 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
 import reportWebVitals from './reportWebVitals';
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+// ROUTER
+import RouterBlog from './RouterBlog';
+
+import './index.css';
+
+// dil seçeneği
+import './internationalization/i18nlanguage';
+
+//ROUTER
+// BrowserRouter http://localhost:3000/
+// HashRouter http://localhost:3000/#/
+import { BrowserRouter } from 'react-router-dom';
+
+// ROOT - DOM
+ const root = ReactDOM.createRoot(document.getElementById('root'));
+// const domNode = document.getElementById('root');
+// const root = createRoot(domNode);
+
 root.render(
   <React.StrictMode>
-    <App />
+    <BrowserRouter>
+      <RouterBlog />
+      {/* <App /> */}
+    </BrowserRouter>
   </React.StrictMode>
 );
 
