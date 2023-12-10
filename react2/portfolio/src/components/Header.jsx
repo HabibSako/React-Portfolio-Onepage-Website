@@ -3,10 +3,11 @@ import React from 'react'
 const Header = () => {
     return (
         <div>
-            <nav className="navbar navbar-expand-md">
-                <div className="container">
+            <nav className="navbar navbar-expand-md ">
+                <div className="header">
+                    {/* icon ve başlık ekleme */}
                     <a className="navbar-brand" href="#">
-                        Habib Şako
+                        <h2 id='navbar-icon'><i class='bx bxs-moon bx-spin bx-md' ></i><b> Habib Şako</b></h2>
                     </a>
                     <button
                         className="navbar-toggler d-lg-none"
@@ -22,14 +23,28 @@ const Header = () => {
                     <div className="collapse navbar-collapse" id="collapsibleNavId">
                         <ul className="navbar-nav me-auto mt-2 mt-lg-0">
                             <li className="nav-item">
-                                <a className="nav-link active" href="#" aria-current="page">
-                                    Home
-                                    <span className="visually-hidden">(current)</span>
+                                <a className="nav-link"  href="#">
+                                    Anasayfa
                                 </a>
                             </li>
                             <li className="nav-item">
                                 <a className="nav-link" href="#">
-                                    Link
+                                    Hakkımda
+                                </a>
+                            </li>
+                            <li className="nav-item">
+                                <a className="nav-link" href="#">
+                                    Özgeçmiş
+                                </a>
+                            </li>
+                            <li className="nav-item">
+                                <a className="nav-link" href="#">
+                                    Projeler
+                                </a>
+                            </li>
+                            <li className="nav-item">
+                                <a className="nav-link" href="#">
+                                    İletişim
                                 </a>
                             </li>
                             <li className="nav-item dropdown">
@@ -41,14 +56,14 @@ const Header = () => {
                                     aria-haspopup="true"
                                     aria-expanded="false"
                                 >
-                                    Dropdown
+                                    Dil
                                 </a>
                                 <div className="dropdown-menu" aria-labelledby="dropdownId">
                                     <a className="dropdown-item" href="#">
-                                        Action 1
+                                        Türkçe
                                     </a>
                                     <a className="dropdown-item" href="#">
-                                        Action 2
+                                        English
                                     </a>
                                 </div>
                             </li>
@@ -66,8 +81,6 @@ const Header = () => {
                     </div>
                 </div>
             </nav>
-
-
         </div>
     )
 }

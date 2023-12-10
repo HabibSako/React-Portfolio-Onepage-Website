@@ -1,13 +1,13 @@
-/* common config */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  scroll-behavior: smooth;
-  outline: none;
-}
-
-/* assign the color to a variable */
+/*
+Project Made Date: December 10 Sunday 2023
+Project Made By: Habib Şako
+Project Made For: 2023
+Project Made With: HTML, CSS, JS, React, Node.js;
+Project Version: v1.0.0
+Project Status: Completed
+Project Description: This is a one page blog website
+*/
+/**======================== ROOT ========================**/
 :root {
   --color1: #F3F1F6;
   --color_t: #F4AC55;
@@ -16,17 +16,15 @@
   --color4: #0D0D0D;
   --bg: #FFFFFF;
   --shadow-color: rgba(0, 0, 0, .2);
-  /* --color11: #0066CC;
-  --color_t5: #D1512D;
-  --color33: #000033;
-  --color22: #B6BBC4;
-  --bg5: #e8edf2; */
-  /*100F0F
-  93B1A6
-  D1512D
-  0F3D3E
-  DDE6ED
-  */
+}
+
+/**======================== Common Config ========================**/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  outline: none;
 }
 
 /* bunu yapma amacımız rem değerini kullanmak. Rem yapısı sayesinde telefon, bilgisyar için ayrı ayrı font büyüklüğü vermemize gerek kalmayacak. */
@@ -44,13 +42,32 @@ body {
   width: 100%;
 }
 
-/* linklerin altı çizili vb. özel yapıları kaldırır. */
 a {
   text-decoration: none;
 }
 
-/*************************************************************/
-/* header and navbar*/
+ul {
+  list-style-type: none;
+}
+
+p {
+  font-size: 1.4rem;
+  text-align: justify;
+  color: var(--color4);
+}
+
+img:hover {
+  box-shadow: var(--shadow-color);
+}
+
+i{
+  font-size: 1.5rem;
+}
+
+/**======================== Header - Navbar ========================**/
+#navbar-icon{
+  color: var(--color3);
+}
 .header {
   position: fixed;
   top: 0;
@@ -65,316 +82,10 @@ a {
   border-bottom: var(--color3) solid;
 }
 
-.logo {
-  font-size: 2rem;
-  color: var(--color3);
-  font-weight: 700;
-  cursor: default;
-}
-
-/* .navbar a {
-  position: relative;
-  font-size: 1.7rem;
-  color: var(--bg);
-  font-weight: lighter;
-  font-size: 1, 5rem;
-  margin-right: 3.5rem;
-}
-
-
-.navbar ul{
-  float: right;
-}
-
-/* underlined link */
-/* .navbar a.active::before {
-  content: '';
-  position: absolute;
-  left: 0;
-  width: 100%;
-  height: .2rem;
-  background-color: var(--color3);
-  bottom: -4px;
-} */ 
-
-/* home content about personal info */
-.home {
-  min-height: 100vh;
-  align-items: center;
-  color: var(--color1);
-  padding: 22rem 7% 2rem;
-  display: flex;
-  background-image: url(img/background_img/mountain.jpg);
-  background-size: cover;
-  background-position: 35% 80%;
-}
-
-.home-content {
-  max-width: 65rem;
-}
-
-.home-content h3 {
-  font-size: 3.2rem;
-  font-weight: 500;
-  line-height: .7;
-}
-
-.home-content h1 {
-  font-size: 5.6rem;
-  font-weight: 700;
-  letter-spacing: .2rem;
-}
-
-.home-content p {
-  font-size: 1.6rem;
-  font-weight: 100;
-}
-
-/* Social media icon */
-.home-content .social-media a {
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  width: 8rem;
-  height: 4rem;
-  background: transparent;
-  color: var(--color3);
-  border-radius: 50px;
-  box-shadow: 0 .2rem .5rem var(--color3);
-  transition: 1s;
-  margin: 1rem;
-}
-
-.home-content .social-media a:hover {
-  background-color: var(--color3);
-  color: var(--color4);
-}
-
-/* button */
-.btn {
-  display: inline-block;
-  padding: 1rem 5rem;
-  margin-left: 6rem;
-  margin-top: 2rem;
-  background-color: var(--color3);
-  color: var(--color4);
-  box-shadow: 0 .2rem .5rem var(--color3);
-  font-size: 1.5rem;
-  color: var(--color1);
-  /* letter spacing in the button*/
-  letter-spacing: .1rem;
-  transition: 1s;
-}
-
-.btn:hover {
-  background-color: transparent;
-  color: var(--color3);
-}
-
-/*************************************************************/
-
-
-/* BODY DIV */
-.div_dark {
-  background-color: var(--color4);
+.nav-item a{
   color: var(--color2);
-  width: 100%;
-  margin: 0 auto;
-  padding-top: 5rem;
-  padding-bottom: 7rem;
-
 }
-
-.div_dark2 {
-  background-color: var(--bg);
-  color: var(--color4);
-  width: 100%;
-  margin: 0 auto;
-  padding-top: 5rem;
-  padding-bottom: 7rem;
-
-}
-
-#parag_resume {
-
-  justify-content: center;
-  align-items: center;
-  background-color: var(--color_t);
-  padding: 0;
-  margin: 0;
-  border-radius: 20px;
-
-}
-
-
-.div_light {
-  background-color: var(--color1);
-  color: var(--color4);
-  min-height: 20rem;
-  padding-bottom: 7rem;
-
-}
-
-.div_other {
-  background-color: var(--color3);
-  color: var(--color1);
-  padding: 0.2rem;
-  font-weight: bolder;
-
-}
-
-.div_parag {
-  margin-left: 10%;
-  margin-right: 10%;
-  text-align: left;
-}
-
-/* div header */
-.div_header {
-  position: relative;
-  text-align: center;
-
-}
-
-.div_header h2 {
-  font-size: 32px;
-  margin-bottom: 6rem;
-  text-transform: uppercase;
-  padding-top: 4rem;
-  color: var(--color4);
-  font-weight: bolder;
-}
-
-/* hr decoration */
-h2 hr {
-  width: 20%;
-  margin-left: 40%;
-  margin-right: 40%;
-}
-
-h5 hr {
-  width: 70%;
-  margin-left: 15%;
-  margin-right: 15%;
-  color: var(--color3);
-}
-
-.parag_1 {
-  text-align: left;
-  margin-top: 4rem;
-  padding-left: 2rem;
-  font-weight: lighter;
-}
-
-/* about me */
-#img_resume1 {
-  width: fit-content;
-  border: var(--color2) solid;
-  border-radius: 10px;
-  background-size: cover;
-}
-
-#img_resume1:hover {
-  border: var(--color_t) solid;
-}
-
-/* RESUME */
-
-/* Education cards */
-.education_title {
-  padding-top: 1rem;
-  text-align: center;
-}
-
-.education_card {
-  background-color: var(--color3);
-  color: var(--color1);
-  margin-bottom: 3rem;
-  padding: 2rem;
-  height: fit-content;
-  border-radius: 10px;
-}
-
-.education_card:hover {
-  border: 2px solid var(--color4);
-
-}
-
-.education_card p {
-  color: var(--color4);
-}
-
-.education_card hr {
-  color: #F4AC55;
-}
-
-/* Experience Card */
-.experience_card {
-  background-color: var(--color_t);
-  padding-bottom: 2rem;
-  padding: 2rem;
-  border-radius: 10px;
-  width: 99%;
-}
-
-.experience_card:hover {
-  border: 2px solid var(--color3);
-
-}
-
-.experience_card div div img {
-  height: 90%;
-  width: 80%;
-  border-radius: 5px;
-  border: 1px solid var(--color3);
-}
-
-.experience_card ul li p {
-  text-align: left;
-  font-weight: lighter;
-}
-
-/* skills card */
-.skills_card {
-  border: 3px solid var(--color3);
-  text-align: left;
-  margin-top: 4rem;
-  border-radius: 20px;
-}
-
-/* li icons */
-.skills_card ul li i {
+.nav-item a:hover{
   color: var(--color_t);
 }
 
-.skills_card ul li {
-  padding-left: 3rem;
-  padding-top: 1rem;
-  font-weight: 700;
-  font-size: x-large;
-}
-
-.skills_card ul {
-  padding-left: 10rem;
-}
-
-.skills_card h2{
-  color: var(--color3);
-  width: 80%;
-  text-align: left;
-}
-
-/* div line */
-.div_line {
-  background-color: var(--color_t);
-  width: 100%;
-  height: 0.2rem;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-}
-
-/* rotating logos */
-.skill_logo {
-  width: 100%;
-  text-align: center;
-}
