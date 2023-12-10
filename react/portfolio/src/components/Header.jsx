@@ -27,6 +27,7 @@ class Header extends Component {
     render() {
 
         /* JS Codes */
+        navba
         const { t } = this.props;
 
         /* return */
