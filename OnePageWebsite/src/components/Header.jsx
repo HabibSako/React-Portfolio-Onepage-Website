@@ -128,8 +128,8 @@ class Header extends Component {
                 </div>
                 {/* end  Login Off Canvas Login */}
 
-                {/* start Register Off Canvas Register */}
-                <div className="container-fluid ">
+                 {/* start Register Off Canvas Register */}
+                 <div className="container-fluid ">
                     <div
                         className="offcanvas offcanvas-end bg-dark text-white"
                         tabIndex={-1}
@@ -151,12 +151,36 @@ class Header extends Component {
                             <form>
                                 <input
                                     className="form-control me-2 mb-2"
+                                    type="uname"
+                                    id="uname"
+                                    name="uname"
+                                    title="username"
+                                    placeholder="Username"
+                                />
+
+                                <input
+                                    className="form-control me-2 mb-2"
+                                    type="usurname"
+                                    id="uname"
+                                    name="uname"
+                                    title="username"
+                                    placeholder="Surname"
+                                />
+
+                                <input
+                                    className="form-control me-2 mb-2"
                                     type="email"
+                                    id="uemail"
+                                    name="uemail"
+                                    title="email"
                                     placeholder="email address"
                                 />
                                 <input
                                     className="form-control me-2 mb-2"
                                     type="password"
+                                    id="upassword"
+                                    name="upassword"
+                                    title="password"
                                     placeholder="password"
                                 />
                                 <button className="btn btn-outline-danger mt-2 me-2" type="reset">

@@ -34,6 +34,8 @@ class RouterBlog extends Component {
 
                         {/* Blog */}
                         <Route path={"/blog"} element={<BlogPage />} />
+
+                        
  
                         {/*OTHER PATH*/}
                         {/* Bad Request */}
