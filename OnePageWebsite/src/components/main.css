@@ -1,7 +1,7 @@
 /*HEADER*/
 header{
-    /* background-image: url('../image/office.jpg'); */
-    height: 75vh;
+    background-image: url('../image/background_img/soloturk.jpg');
+    height: 85vh;
     background-size: cover;
     background-position: center;
     padding-top: 12rem;

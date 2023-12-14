@@ -5,7 +5,7 @@ import { withTranslation } from 'react-i18next';
 import './main.css'
 
 /* Image */
-// import Office from '../image/office.jpg';
+import Office from '../image/background_img/soloturk.jpg';
 // import Ball from '../image/ball.jpg';
 // import Mountains from '../image/mountains.jpg';
 // import SunRise from '../image/sunrise.jpg';
@@ -39,16 +39,34 @@ class Main extends Component {
                 <header id="header">
                     <div className="jumbotron text-white">
                         <div className="container">
-                            <div className="p-4 text-center">
-                                <h1 className="text-uppercase display-3 shadow wow bounceIn animated" data-wow-delay=".50s">Btk Akademi Frontend Eğitimine <br /> Hoş geldiniz</h1>
-                                <h4>Html5, Css3, Js, React JS, Git</h4>
-                                <a href="" className="btn btn-outline-primary shadow">Linkedin</a>
-                                <a href="" className="btn btn-outline-danger shadow">GitHub</a>
-                                <a href="" className="btn btn-outline-warning shadow">Git</a>
-                            </div>
+                        <div className="home-content">
+                        <h3>Merhaba, ben</h3>
+                        <h1>Habib Şako</h1>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero explicabo
+                            mollitia quaerat ea quibusdam voluptatum nihil distinctio a.
+                        </p>
+                        <div className="social-media">
+                            <a href="#">
+                                <i className="bx bxl-linkedin-square bx-lg" />
+                            </a>
+                            <a href="#">
+                                <i className="bx bxl-github bx-lg" />
+                            </a>
+                            <a href="#">
+                                <i className="bx bxl-gitlab bx-lg" />
+                            </a>
+                        </div>
+                        <a href="#" className="btn">
+                            Özgeçmiş
+                        </a>
+                    </div>
                         </div>
                     </div>
                 </header>
+                <section className="home" id="home">
+                    
+                </section>
                 {/* ends codes Header  */}
 
                 {/* start codes Main  */}
