@@ -1,9 +1,24 @@
 //rafce
 import React from 'react'
+import './main.css';
 
 const Main = () => {
     return (
         <>
+            <section className='home' id='home'>
+                <div class="home-content">
+                    <h3>Merhaba, ben</h3>
+                    <h1>Habib Şako</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero explicabo mollitia quaerat ea quibusdam
+                        voluptatum nihil distinctio a.</p>
+                    <div class="social-media">
+                        <a href="#"><i class='bx bxl-linkedin-square bx-lg'></i></a>
+                        <a href="#"><i class='bx bxl-github bx-lg'></i></a>
+                        <a href="#"><i class='bx bxl-gitlab bx-lg'></i></a>
+                    </div>
+                    <a href="#" class="btn">Özgeçmiş <i class='bx bx-down-arrow-alt bx-flashing bx-md'></i></a>
+                </div>
+            </section>
             <section>
                 <div className="div_dark2">
                     <div className="div_parag">
