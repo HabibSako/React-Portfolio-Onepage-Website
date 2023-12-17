@@ -1,7 +1,17 @@
+:root {
+    --color1: #F3F1F6;
+    --color_t: #F4AC55;
+    --color2: #F8FAFB;
+    --color3: #4B3FE4;
+    --color4: #0D0D0D;
+    --bg: #FFFFFF;
+    --shadow-color: rgba(0, 0, 0, .2);
+}
+
 /*HEADER*/
-header{
+header {
     background-image: url('../image/background_img/soloturk.jpg');
-    height: 85vh;
+    height: 90vh;
     background-size: cover;
     background-position: center;
     padding-top: 12rem;
@@ -12,83 +22,98 @@ header{
 
 /* MAIN SECTION */
 /*SERVICES*/
-#services_id{
-    margin-bottom:4rem;
+#services_id {
+    margin-bottom: 4rem;
     margin-top: 2rem;
 }
 
 #services_id .icon_service i {
     font-size: 3rem;
-    color: #dc3545;
+    color: cornflowerblue;
     margin-bottom: 1rem;
     margin-left: 4rem;
 }
 
-#services_id .icon_service h4{
+#services_id .icon_service h4 {
     text-transform: capitalize;
     font-weight: 600;
+    
 }
 
 /*BLOG*/
-#blog_id{
+#blog_id {
     margin-bottom: 4rem;
     margin-top: 8rem;
-    padding:3rem .1rem;
+    padding: 3rem .1rem;
     background-color: rgb(166, 165, 167);
 }
 
-#blog_id h2{
-    color:white;
-    margin-bottom:4rem;
+#blog_id h2 {
+    color: white;
+    margin-bottom: 4rem;
 }
 
-#blog_id .blog_service .container .row .card img{
+#blog_id .blog_service .container .row .card img {
     max-width: 100%;
     height: 15rem;
-    padding:0.2rem;
+    padding: 0.2rem;
 }
 
-#blog_id .blog_service .container .row .card img:hover{
+#blog_id .blog_service .container .row .card img:hover {
     transition: ease-in-out 3s;
     transform: rotate(360deg);
     opacity: 0.8;
 }
 
-#blog_id .blog_service .card-body h4,p{
-   color:black;
+#blog_id .blog_service .card-body h4,
+p {
+    color: black;
 }
 
 /* ABOUT */
-#about_id{
-    /* background-image: url("../image/office.jpg"); */
+#about_id {
+    background-image: url("../image/background_img/drone-3.jpg");
     background-color: transparent;
     background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
-    height: 40rem;
-    padding:2rem;
+    height: 20rem;
+    padding: 2rem;
+    margin-bottom: 4rem;
+    font-size: large;
+    
 }
 
 /* CONTACT */
-#contact_id{
+#contact_id {
     margin-bottom: 4rem;
     margin-top: 8rem;
-    padding:3rem .1rem;
+    padding: 3rem .1rem;
 }
 
 /*BACK TO TOP*/
-#backToTop{
+#backToTop {
     position: fixed;
     bottom: 0.7rem;
     right: 0.5rem;
-    background-color: #dc3545;
-    color: white;
+    background-color: var(--color3);
+    color: var(--color_t);
     width: 3rem;
     height: 3rem;
     text-align: center;
     line-height: 3rem;
-    font-size: 1.5rem;
-    border-radius: 50%;
+    border-radius: 15%;
     cursor: pointer;
-    /* display: none; */
+    
+}
+
+#backToTop:hover {
+    background-color: var(--color_t);
+    color: var(--color3);
+}
+
+#services_card div{
+    padding: 2rem;
+ 
+    
 }

@@ -37,54 +37,6 @@ class Header extends Component {
         /* Return */
         return (
             <React.Fragment>
-                {/* start First Navbar */}
-                <nav id="navbar_first_id" >
-                    <div class="navbar_first_class pt-2">
-                        <div class="container">
-                            <div className="row">
-                                {/* LEFT */}
-                                <div className=" col-xs-12 col-sm-6 col-md-9 col-lg-7">
-                                    <ul id="navbar_first_left" className="clearfix">
-                                        {/* Telephone */}
-                                        <li>
-                                            <a href="telephone"> <i class="fa-solid fa-mobile-screen"></i></a>
-                                        </li>
-                                        {/* mail */}
-                                        <li>
-                                            <a href="mailto:deneme@gmail.com"> <i class="fa-regular fa-envelope"></i></a>
-                                        </li>
-                                        {/* whatsapp */}
-                                        <li>
-                                            <a href="https://wa.me?'Size nasıl yardımcı olabilirim'"> <i class="fa-brands fa-whatsapp"></i></a>
-                                        </li>
-                                    </ul>
-                                </div>
-                                {/* RIGHT */}
-                                <div className=" col-xs-12 col-sm-6 col-md-3 col-lg-5">
-                                    <ul id="navbar_first_right">
-                                        <li>
-                                            <a href="#"
-                                                type="button"
-                                                data-bs-toggle="offcanvas"
-                                                data-bs-target="#offcanvas_login"
-                                                aria-controls="offcanvasNavbar" >
-                                                    <i className="fa-solid fa-user-check text-warning"></i>
-                                                </a>
-
-                                            <a href="#"
-                                                type="button"
-                                                data-bs-toggle="offcanvas"
-                                                data-bs-target="#offcanvas_register"
-                                                aria-controls="offcanvasNavbar" ><i className="fa-solid fa-user-lock text-warning"></i></a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </nav>
-                {/* end   First Navbar */}
-
                 {/* start Login Off Canvas Login */}
                 <div className="container-fluid ">
                     <div
@@ -128,8 +80,8 @@ class Header extends Component {
                 </div>
                 {/* end  Login Off Canvas Login */}
 
-                 {/* start Register Off Canvas Register */}
-                 <div className="container-fluid ">
+                {/* start Register Off Canvas Register */}
+                <div className="container-fluid ">
                     <div
                         className="offcanvas offcanvas-end bg-dark text-white"
                         tabIndex={-1}
@@ -196,15 +148,16 @@ class Header extends Component {
                 {/* end Register Off Canvas Login */}
 
 
-                {/* start Second Navbar */}
-                <nav 
-                id="navbar_second_id" 
-                className="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+                {/* start Navbar */}
+                <nav
+                    id="navbar_second_id"
+                    className="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
                     <div className="container">
                         <a
                             className="navbar-brand"
                             href={this.props.url}>
-                            <i className={this.props.logo}></i>
+                            <i class="fa-regular fa-paper-plane"></i>
+                            
                         </a>
                         <button
                             className="navbar-toggler d-lg-none"
@@ -277,23 +230,29 @@ class Header extends Component {
                             </ul>
 
 
-                            <form className="d-flex my-2 my-lg-0">
-                                <input
-                                    className="form-control me-sm-2"
-                                    type="text"
-                                    // placeholder={this.props.t('search')}
-                                    placeholder={t('search')}
-                                />
-                                <button className="btn btn-outline-success my-2 my-sm-0" type="submit">
-                                    {t('search')}
-                                </button>
-                            </form>
+                            <ul id="navbar_first_right">
+                                <li>
+                                    <a href="#"
+                                        type="button"
+                                        data-bs-toggle="offcanvas"
+                                        data-bs-target="#offcanvas_login"
+                                        aria-controls="offcanvasNavbar" >
+                                        <i className="fa-solid fa-user-check text-warning"></i>
+                                    </a>
+
+                                    <a href="#"
+                                        type="button"
+                                        data-bs-toggle="offcanvas"
+                                        data-bs-target="#offcanvas_register"
+                                        aria-controls="offcanvasNavbar" ><i className="fa-solid fa-user-lock text-warning"></i></a>
+                                </li>
+                            </ul>
                         </div>
                     </div>
                 </nav>
-                {/* end Second Navbar */}
+                {/* end Navbar */}
             </React.Fragment>
-        ); //end retur
+        ); //end return
     } //end render
 } //end class
 

@@ -1,28 +1,21 @@
 /*
-Project Made Date: December 7 Thursday 2023
-Project Made By: hamit Mızrak
+Project Made Date: December 10 Sunday 2023
+Project Made By: Habib Şako
 Project Made For: 2023
-Project Made With: HTML, CSS, JS, React, Node.js, Express.js, MongoDB, Mongoose, Redux, React-Redux, Redux-Thunk, React-Router-Dom, React-Icons, React-Bootstrap, React-Toastify, React-Quill, React-Image-File-Resizer, React-Image-Gallery, React-Player, React-Share, React-Countup, React-Chartjs-2, React-Datepicker,
+Project Made With: HTML, CSS, JS, React, Node.js;
 Project Version: v1.0.0
 Project Status: Completed
-Project Description: This is a blog website. You can create, read, update and delete posts. You can also create, read, update and delete categories. You can also create, read, update and delete comments. You can also create, read, update and delete users. You can also create, read, update and delete contact messages. You can also create, read, update and delete about me. You can also create, read, update and delete social media links. You can also create, read, update and delete images. You can also create, read, update and delete videos. You can also create, read, update and delete files. You can also create, read, update and delete audios. You can also create, read, update and delete links. You can also create, read, update and delete tags. You can also create, read, update and delete pages. You can also create, read, update and delete menus. You can also create, read, update and delete menu items. You can also create, read, update and delete menu item links.
-Project Website: https://hamitmizrakblog.herokuapp.com/
-Project Source:
+Project Description: This is a one page blog website
 */
 /***** ROOT **********************************************************************/
 :root {
-  --template-bg: #414141;
-  --template-color: #e3e3e3;
-  --header-vh: 150vh;
-  --max-width: 100%;
-  --light: #f8f9fa;
-  --dark: #343a40;
-  --danger: #dc3545;
-  --success: #28a745;
-  --warning: #ffc107;
-  --info: #17a2b8;
-  --primary: #007bff;
-  --secondary: #6c757d;
+  --color1: #F3F1F6;
+  --color_t: #F4AC55;
+  --color2: #F8FAFB;
+  --color3: #4B3FE4;
+  --color4: #0D0D0D;
+  --bg: #FFFFFF;
+  --shadow-color: rgba(0, 0, 0, .2);
 }
 
 /***** COMMON **********************************************************************/
@@ -69,7 +62,7 @@ img {
 }
 
 img:hover {
-  box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, .9);
+  box-shadow: 1px 1px 3px 1px var(--shadow-color);
 }
 
 i {
@@ -164,7 +157,6 @@ i {
 
 /********************************************/
 /* NAVBAR */
-/* navbar first */
 #navbar_first_id {
   max-height: 4rem;
   max-width: 100% !important;
@@ -175,40 +167,27 @@ i {
   top: 0;
 }
 
-#navbar_first_id ul li {
-  display: inline;
+#navbar_second_id ul li a:hover{
+  color: var(--color_t);
 }
 
-#navbar_first_id ul li a {
-  margin-right: 0.1rem;
-}
-
-#navbar_first_id i {
-  font-size: 1.2rem;
-  color: #dc3545;
-  margin-right: 0.5rem;
-}
-
-#navbar_first_left {
-  float: left;
-}
-
-#navbar_first_right {
-  float: right;
-}
-
-/* Media Query */
-@media screen and (max-width:575px) {
-  #navbar_first_right {
-    /* display: none; */
-    margin-top: -2.8rem;
-  }
-}
-
-/* navbar second */
+/* navbar */
 #navbar_second_id {
   position: sticky!important;
   top: 10!important;
 }
 
 /********************************************/
+
+/************* Footer *****************/
+#footer {
+  text-decoration: none;
+  color: var(--color1);
+}
+#footer li a {
+  margin-left: 1rem;
+  color: var(--color2);
+  text-decoration: none;
+}#footer li a:hover{
+  color: var(--color_t);
+}
