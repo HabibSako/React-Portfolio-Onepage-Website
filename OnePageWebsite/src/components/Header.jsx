@@ -237,14 +237,16 @@ class Header extends Component {
                                         data-bs-toggle="offcanvas"
                                         data-bs-target="#offcanvas_login"
                                         aria-controls="offcanvasNavbar" >
-                                        <i className="fa-solid fa-user-check text-warning"></i>
+                                        <i className="fa-solid fa-key"></i>
                                     </a>
 
                                     <a href="#"
                                         type="button"
                                         data-bs-toggle="offcanvas"
                                         data-bs-target="#offcanvas_register"
-                                        aria-controls="offcanvasNavbar" ><i className="fa-solid fa-user-lock text-warning"></i></a>
+                                        aria-controls="offcanvasNavbar" >
+                                        <i className="fa-solid fa-lock mx-3"></i>
+                                        </a>
                                 </li>
                             </ul>
                         </div>

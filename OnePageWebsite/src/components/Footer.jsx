@@ -36,6 +36,29 @@ class Footer extends Component {
                 <footer className="bg-dark text-white text-md-start" id="contact_id" >
                     {/* Grid container */}
                     <div className="container p-4" id='footer'>
+                        {/* MAP */}
+                        <div className="">
+                            <div className="mapouter">
+                                <div className="gmap_canvas">
+                                    <iframe
+                                        className="gmap_iframe"
+                                        frameBorder={0}
+                                        scrolling="no"
+                                        marginHeight={0}
+                                        marginWidth={0}
+                                        src="https://maps.google.com/maps?width=600&height=400&hl=en&q=malatya&t=&z=14&ie=UTF8&iwloc=B&output=embed"
+                                    />
+                                    <a href="https://embed-googlemap.com">embed google map</a>
+                                </div>
+                                <style
+                                    dangerouslySetInnerHTML={{
+                                        __html:
+                                            ".mapouter{position:relative;text-align:center;width:100%;height:400px;}.gmap_canvas {overflow:hidden;background:none!important;width:100%;height:400px;}.gmap_iframe {width:100%!important;height:400px!important;}"
+                                    }}
+                                />
+                            </div>
+
+                        </div>
                         {/*Grid row*/}
                         <div className="row">
                             {/*Grid column*/}
@@ -158,29 +181,6 @@ class Footer extends Component {
                         {/*Grid row*/}
                     </div>
                     {/* Grid container */}
-                    {/* MAP */}
-                    <div className="">
-                        <div className="mapouter">
-                            <div className="gmap_canvas">
-                                <iframe
-                                    className="gmap_iframe"
-                                    frameBorder={0}
-                                    scrolling="no"
-                                    marginHeight={0}
-                                    marginWidth={0}
-                                    src="https://maps.google.com/maps?width=600&height=400&hl=en&q=malatya&t=&z=14&ie=UTF8&iwloc=B&output=embed"
-                                />
-                                <a href="https://embed-googlemap.com">embed google map</a>
-                            </div>
-                            <style
-                                dangerouslySetInnerHTML={{
-                                    __html:
-                                        ".mapouter{position:relative;text-align:center;width:100%;height:400px;}.gmap_canvas {overflow:hidden;background:none!important;width:100%;height:400px;}.gmap_iframe {width:100%!important;height:400px!important;}"
-                                }}
-                            />
-                        </div>
-
-                    </div>
                     {/* Copyright */}
                     <div
                         className="text-center p-5 mb-0"

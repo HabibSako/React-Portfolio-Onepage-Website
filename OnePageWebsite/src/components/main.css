@@ -10,16 +10,83 @@
 
 /*HEADER*/
 header {
-    background-image: url('../image/background_img/soloturk.jpg');
+    background-image: url('../image/background_img/header3.jpg');
     height: 90vh;
     background-size: cover;
     background-position: center;
     padding-top: 12rem;
     z-index: -1;
-    opacity: 0.9;
+    opacity: 5;
 }
-
-
+#header h3{
+    color: var(--color4);
+}
+#header h1{
+    font-size: 4rem;
+    color: var(--color4);
+}
+#header p{
+    font-size: 1.rem;
+    color: var(--color4);
+}
+#header h1 i{
+    text-decoration: none;
+    font-size: 4rem;
+    color: var(--color3);
+}
+/* icons */
+#header_icons{
+    width: 25%;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 2rem;
+}
+#header_icons a{
+    display: inline-flex;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+    width: 4rem;
+    height: 3rem;
+    background: transparent;
+    border-radius: 50px;
+    box-shadow: 0 .2rem .5rem var(--color4);
+    transition: 1s;
+    margin: 0.4rem;
+}
+#header_icons a i{
+    font-size: 2.3rem;
+    color:var(--color4);
+    transition: 1s;
+    background-color: transparent;
+    border-radius: 5px;
+    padding: 0.3rem;
+}
+#header_icons a i:hover{
+    color:var(--color3);
+}
+#header_icons a:hover{
+    box-shadow: 0 .2rem .5rem var(--color3);
+}
+/* cv button */
+.btn_cv{
+    display: inline-block;
+    padding: 0.8rem 2rem;
+    margin-left: 2rem;
+    margin-top: 2rem;
+    background-color: transparent;
+    color: var(--color4)!important;
+    text-decoration: none;
+    font-weight: bolder;
+    border-radius: 20px;
+    box-shadow: 0 .2rem .5rem var(--color4 );
+    font-size: 1rem;
+    transition: 1s;
+}
+.btn_cv:hover{
+    box-shadow: 0 .2rem .5rem var(--color3);
+    color: var(--color3)!important;
+}
 /* MAIN SECTION */
 /*SERVICES*/
 #services_id {
@@ -45,7 +112,7 @@ header {
     margin-bottom: 4rem;
     margin-top: 8rem;
     padding: 3rem .1rem;
-    background-color: rgb(166, 165, 167);
+    background-color: #e3e3e3;
 }
 
 #blog_id h2 {
@@ -57,12 +124,6 @@ header {
     max-width: 100%;
     height: 15rem;
     padding: 0.2rem;
-}
-
-#blog_id .blog_service .container .row .card img:hover {
-    transition: ease-in-out 3s;
-    transform: rotate(360deg);
-    opacity: 0.8;
 }
 
 #blog_id .blog_service .card-body h4,
@@ -81,7 +142,17 @@ p {
     padding: 2rem;
     margin-bottom: 4rem;
     font-size: large;
-    
+    font-weight: 600;
+}
+/* EDUCATION */
+#education_card{
+    text-align: center;
+}
+#education_card div{
+    border: 1px solid var(--color3);
+    border-radius: 10px;
+    margin: 1rem;
+    padding: 2rem;
 }
 
 /* CONTACT */
@@ -89,6 +160,11 @@ p {
     margin-bottom: 4rem;
     margin-top: 8rem;
     padding: 3rem .1rem;
+}
+
+/* skills */
+#skills_div{
+    background-color: #b2afb4;
 }
 
 /*BACK TO TOP*/
