@@ -33,6 +33,10 @@ i18n.use(initReactI18next).init({
                 'school_3': 'Inonu Univercity - Computer Eng. University',
                 'software_skills': 'Software Skills',
                 'personal_skills': 'Personal Skills',
+                'team_management': 'Team Management',
+                'analytical_thinking': 'Analytical Thinking',
+                'problem_solving': 'Problem Solving',
+                'English': 'b1-b2 Level English',
             }
         },
         tr:
@@ -64,7 +68,11 @@ i18n.use(initReactI18next).init({
                 'school_3': 'İnönü Üniversitesi - Bilgisayar Mühendisliği',
                 'software_skills': 'Yazılım Becerileri',
                 'personal_skills': 'Bireysel Beceriler',
-
+                'team_management': 'Ekip Yönetimi',
+                'analytical_thinking': 'Analitik Düşünme',
+                'problem_solving': 'Sorun Çözme',
+                'English': 'b1-b2 Seviye İngilizce',
+            
             }
         }
     },

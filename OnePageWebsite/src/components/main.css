@@ -164,7 +164,9 @@ p {
 
 /* skills */
 #skills_div{
-    background-color: #b2afb4;
+    background-color: #d6d5d6;
+    border-radius: 20px;
+    padding: 3rem;
 }
 
 /*BACK TO TOP*/

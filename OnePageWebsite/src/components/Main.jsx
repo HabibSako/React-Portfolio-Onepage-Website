@@ -150,7 +150,7 @@ class Main extends Component {
                                     </div>
 
                                     <div className="col-xs-12 col-sm-12 col-md-5 col-lg-3">
-                                    <h4>{this.props.t('school_2')}</h4>
+                                        <h4>{this.props.t('school_2')}</h4>
                                         <h6>
                                             <b>
                                                 <i>
@@ -163,7 +163,7 @@ class Main extends Component {
                                     </div>
 
                                     <div className="col-xs-12 col-sm-12 col-md-6 col-lg-4">
-                                    <h4>{this.props.t('school_3')}</h4>
+                                        <h4>{this.props.t('school_3')}</h4>
                                         <h6>
                                             <b>
                                                 <i>
@@ -183,28 +183,40 @@ class Main extends Component {
                     {/* start skills */}
                     {/*Grid row*/}
                     <div className="container mt-4" id='skills_div'>
-                    <h2 className='text-center my-5'> {this.props.t('skills')}</h2>
+                        <h2 className='text-center my-5'> {this.props.t('skills')}</h2>
                         <div className="row">
                             {/*Grid column*/}
                             <div className="col-lg-6 col-md-12 mb-4 mt-4 mb-md-0">
-                                <h5 >{this.props.t('software_skills')}</h5>
-                                <ul className="list-unstyled mb-0">
-                                <li><i class="fa-solid fa-circle-right"></i>Html5</li>
+                                <h4 className='mb-4 mx-4'>{this.props.t('software_skills')}</h4>
+                                <ul className="list-unstyled mb-1 mx-4">
+                                    <li><i className="fa-solid fa-circle-right fa-fade mb-3 mx-3" style={{ color: "#4B3FE4" }}></i> Html5</li>
+                                    <li><i className="fa-solid fa-circle-right fa-fade mb-3 mx-3" style={{ color: "#4B3FE4" }}></i> CSS3</li>
+                                    <li><i className="fa-solid fa-circle-right fa-fade mb-3 mx-3" style={{ color: "#4B3FE4" }}></i> JavaScript</li>
+                                    <li><i className="fa-solid fa-circle-right fa-fade mb-3 mx-3" style={{ color: "#4B3FE4" }}></i> ReactJS</li>
+                                    <li><i className="fa-solid fa-circle-right fa-fade mb-3 mx-3" style={{ color: "#4B3FE4" }}></i> Java</li>
+                                    <li><i className="fa-solid fa-circle-right fa-fade mb-3 mx-3" style={{ color: "#4B3FE4" }}></i> Kotlin</li>
+                                    <li><i className="fa-solid fa-circle-right fa-fade mb-3 mx-3" style={{ color: "#4B3FE4" }}></i> PostgreSQL</li>
+
                                 </ul>
                             </div>
                             {/*Grid column*/}
                             {/*Grid column*/}
                             <div className="col-lg-6 col-md-12 mb-4 mt-4 mb-md-0">
-                                <h5 >{this.props.t('personal_skills')}</h5>
+                                <h4 className='mb-4 mx-4'>{this.props.t('personal_skills')}</h4>
                                 {/* FORM */}
-                                <div className="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xxl-6">
-                                   
+                                <div className="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xxl-6 mx-5">
+                                    <ul className="list-unstyled mb-1">
+                                        <li><i className="fa-solid fa-circle-right fa-fade mb-3 mx-3" style={{ color: "#4B3FE4" }}></i> {this.props.t('team_management')}</li>
+                                        <li><i className="fa-solid fa-circle-right fa-fade mb-3 mx-3" style={{ color: "#4B3FE4" }}></i> {this.props.t('analytical_thinking')}</li>
+                                        <li><i className="fa-solid fa-circle-right fa-fade mb-3 mx-3" style={{ color: "#4B3FE4" }}></i> {this.props.t('problem_solving')}</li>
+                                        <li><i className="fa-solid fa-circle-right fa-fade mb-3 mx-3" style={{ color: "#4B3FE4" }}></i> {this.props.t('English')}</li>
+                                    </ul>
                                 </div>
                             </div>
                             {/*Grid column*/}
                         </div>
                     </div>
-                    
+
                     {/* end skills */}
 
                     {/* start blog */}
