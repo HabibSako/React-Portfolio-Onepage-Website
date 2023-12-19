@@ -32,10 +32,60 @@ niteliğinde kısaca kişinin tanıtımını yapmaktadır.
   
 ## Public Api
 
-- Kullandığım public api web sitesi : [ergast.com](https://ergast.com/mrd/) 
-- Postman kullanarak attığım örnek sorgu : 
-`http://ergast.com/api/f1/drivers?limit=10&offset=20`
+```
+List
+GET
+https://657ae489394ca9e4af12fa6f.mockapi.io/api/v1/blog/register
 
+Find 
+GET
+https://657ae489394ca9e4af12fa6f.mockapi.io/api/v1/blog/register/2
+
+Create 
+POST 
+https://657ae489394ca9e4af12fa6f.mockapi.io/api/v1/blog/register
+{
+    "name": "name 444",
+    "surname": "surname 444",
+    "email": "email 444",
+    "password": "password 444",
+    "systemCreatedDate": 1702553267
+}
+
+curl --location 'https://657ae489394ca9e4af12fa6f.mockapi.io/api/v1/blog/register' \
+--header 'Content-Type: application/json' \
+--data '{
+    "name": "name 444",
+    "surname": "surname 444",
+    "email": "email 444",
+    "password": "password 444",
+    "systemCreatedDate": 1702553267
+}'
+
+DELETE 
+https://657ae489394ca9e4af12fa6f.mockapi.io/api/v1/blog/register/1
+curl --location --request DELETE 'https://657ae453394ca9e4af12f9c6.mockapi.io/api/v1/blog/register/1'
+
+PUT 
+https://657ae489394ca9e4af12fa6f.mockapi.io/api/v1/blog/register/6
+ {
+        "name": "name 444",
+        "surname": "surname 444",
+        "email": "email 444",
+        "password": "password 444",
+        "systemCreatedDate": 1702553267
+}
+
+curl --location --request PUT 'https://657ae489394ca9e4af12fa6f.mockapi.io/api/v1/blog/register/6' \
+--header 'Content-Type: application/json' \
+--data ' {
+        "name": "name 444",
+        "surname": "surname 444",
+        "email": "email 444",
+        "password": "password 444",
+        "systemCreatedDate": 1702553267
+}'
+```
 
 
   
@@ -103,11 +153,60 @@ briefly introduces the person.
 
   
 ## Public Api
+```
+List
+GET
+https://657ae489394ca9e4af12fa6f.mockapi.io/api/v1/blog/register
 
-  
-- The public api website I use is :[ergast.com](https://ergast.com/mrd/) 
-- Sample query I threw using Postman: 
-`http://ergast.com/api/f1/drivers?limit=10&offset=20`
+Find 
+GET
+https://657ae489394ca9e4af12fa6f.mockapi.io/api/v1/blog/register/2
+
+Create 
+POST 
+https://657ae489394ca9e4af12fa6f.mockapi.io/api/v1/blog/register
+{
+    "name": "name 444",
+    "surname": "surname 444",
+    "email": "email 444",
+    "password": "password 444",
+    "systemCreatedDate": 1702553267
+}
+
+curl --location 'https://657ae489394ca9e4af12fa6f.mockapi.io/api/v1/blog/register' \
+--header 'Content-Type: application/json' \
+--data '{
+    "name": "name 444",
+    "surname": "surname 444",
+    "email": "email 444",
+    "password": "password 444",
+    "systemCreatedDate": 1702553267
+}'
+
+DELETE 
+https://657ae489394ca9e4af12fa6f.mockapi.io/api/v1/blog/register/1
+curl --location --request DELETE 'https://657ae453394ca9e4af12f9c6.mockapi.io/api/v1/blog/register/1'
+
+PUT 
+https://657ae489394ca9e4af12fa6f.mockapi.io/api/v1/blog/register/6
+ {
+        "name": "name 444",
+        "surname": "surname 444",
+        "email": "email 444",
+        "password": "password 444",
+        "systemCreatedDate": 1702553267
+}
+
+curl --location --request PUT 'https://657ae489394ca9e4af12fa6f.mockapi.io/api/v1/blog/register/6' \
+--header 'Content-Type: application/json' \
+--data ' {
+        "name": "name 444",
+        "surname": "surname 444",
+        "email": "email 444",
+        "password": "password 444",
+        "systemCreatedDate": 1702553267
+}'
+```
 
 
 
@@ -137,6 +236,10 @@ npm install i18next --savenpm i react-i18next --save
 
 npm start
 ``` 
+
+
 ## Author and Acknowledgments
 - Author : [@HabibSako](https://github.com/HabibSako/)
 - I would like to thank [@hamitmizrak](https://github.com/hamitmizrak/) and [@BTKAkademi](https://twitter.com/BTKAkademi) for their contributions and efforts.  
+
+
