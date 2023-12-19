@@ -44,7 +44,7 @@ i18n.use(initReactI18next).init({
             translations: {
                 'home_page': 'Anasayfa',
                 'blog': 'Projeler',
-                'about': 'Hakkımızda',
+                'about': 'Hakkımda',
                 'contact': 'İletişim',
                 'search': 'Arama',
                 'languages': 'Diller',

@@ -4,6 +4,7 @@
     --color2: #F8FAFB;
     --color3: #4B3FE4;
     --color4: #0D0D0D;
+    --color5: #d6d5d6;
     --bg: #FFFFFF;
     --shadow-color: rgba(0, 0, 0, .2);
 }
@@ -164,7 +165,7 @@ p {
 
 /* skills */
 #skills_div{
-    background-color: #d6d5d6;
+    background-color: var(--color5);
     border-radius: 20px;
     padding: 3rem;
 }

@@ -140,7 +140,7 @@ i {
 
 /* dark mode */
 :root {
-  --body_background: #e3e3e3 !important;
+  --body_background: var(--color1) !important;
   --body_color: #414141 !important;
 }
 
@@ -148,6 +148,7 @@ i {
 [data-theme="dark"] {
   --body_background: #414141 !important;
   --body_color: #e3e3e3 !important;
+  --color5: #626062;
 }
 
 /* dark mode */
