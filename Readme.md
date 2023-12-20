@@ -33,15 +33,15 @@ niteliğinde kısaca kişinin tanıtımını yapmaktadır.
 ## Public Api
 
 ```
-List
+Listeleme
 GET
 https://657ae489394ca9e4af12fa6f.mockapi.io/api/v1/blog/register
 
-Find 
+Bulma
 GET
 https://657ae489394ca9e4af12fa6f.mockapi.io/api/v1/blog/register/2
 
-Create 
+Oluşturma
 POST 
 https://657ae489394ca9e4af12fa6f.mockapi.io/api/v1/blog/register
 {
@@ -62,11 +62,11 @@ curl --location 'https://657ae489394ca9e4af12fa6f.mockapi.io/api/v1/blog/registe
     "systemCreatedDate": 1702553267
 }'
 
-DELETE 
+Silme 
 https://657ae489394ca9e4af12fa6f.mockapi.io/api/v1/blog/register/1
 curl --location --request DELETE 'https://657ae453394ca9e4af12f9c6.mockapi.io/api/v1/blog/register/1'
 
-PUT 
+Yerleştirme(put) 
 https://657ae489394ca9e4af12fa6f.mockapi.io/api/v1/blog/register/6
  {
         "name": "name 444",
