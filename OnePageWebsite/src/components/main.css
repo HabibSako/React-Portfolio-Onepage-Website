@@ -18,37 +18,38 @@ header {
     padding-top: 12rem;
     z-index: -1;
     opacity: 5;
+    background-position: center;
 }
 
-#header h3{
+#header h3 {
     color: var(--color4);
 }
 
-#header h1{
+#header h1 {
     font-size: 4rem;
     color: var(--color4);
 }
 
-#header p{
+#header p {
     font-size: 1.rem;
     color: var(--color4);
 }
 
-#header h1 i{
+#header h1 i {
     text-decoration: none;
     font-size: 4rem;
     color: var(--color3);
 }
 
 /* icons */
-#header_icons{
+#header_icons {
     width: 25%;
     justify-content: space-around;
     align-items: center;
     margin-top: 2rem;
 }
 
-#header_icons a{
+#header_icons a {
     display: inline-flex;
     text-decoration: none;
     justify-content: center;
@@ -62,42 +63,42 @@ header {
     margin: 0.4rem;
 }
 
-#header_icons a i{
+#header_icons a i {
     font-size: 2.3rem;
-    color:var(--color4);
+    color: var(--color4);
     transition: 1s;
     background-color: transparent;
     border-radius: 5px;
     padding: 0.3rem;
 }
 
-#header_icons a i:hover{
-    color:var(--color3);
+#header_icons a i:hover {
+    color: var(--color3);
 }
 
-#header_icons a:hover{
+#header_icons a:hover {
     box-shadow: 0 .2rem .5rem var(--color3);
 }
 
 /* cv button */
-.btn_cv{
+.btn_cv {
     display: inline-block;
     padding: 0.8rem 2rem;
     margin-left: 2rem;
     margin-top: 2rem;
     background-color: transparent;
-    color: var(--color4)!important;
+    color: var(--color4) !important;
     text-decoration: none;
     font-weight: bolder;
     border-radius: 20px;
-    box-shadow: 0 .2rem .5rem var(--color4 );
+    box-shadow: 0 .2rem .5rem var(--color4);
     font-size: 1rem;
     transition: 1s;
 }
 
-.btn_cv:hover{
+.btn_cv:hover {
     box-shadow: 0 .2rem .5rem var(--color3);
-    color: var(--color3)!important;
+    color: var(--color3) !important;
 }
 
 /* MAIN SECTION */
@@ -117,7 +118,7 @@ header {
 #services_id .icon_service h4 {
     text-transform: capitalize;
     font-weight: 600;
-    
+
 }
 
 /*BLOG*/
@@ -156,13 +157,47 @@ p {
     margin-bottom: 4rem;
     font-size: large;
     font-weight: 600;
+    text-align: justify;
+
 }
+
+@media screen and (max-width: 576px) {
+    #about_id {
+        height: 50rem;
+        padding: 0;
+        padding-top: 2rem;
+    }
+
+    header {
+        height: 100vh;
+        padding-top: 6rem;
+        background-position: 20%;
+    }
+
+    
+
+    
+}
+
+@media screen and (min-width: 576px) and (max-width: 999px) {
+    #about_id {
+        height: 30rem;
+        padding: 0;
+        padding-top: 2rem;
+    }
+    header {
+        padding-top: 6rem;
+        background-position: 30%;
+    }
+
+}
+
 /* EDUCATION */
-#education_card{
+#education_card {
     text-align: center;
 }
 
-#education_card div{
+#education_card div {
     border: 1px solid var(--color3);
     border-radius: 10px;
     margin: 1rem;
@@ -177,7 +212,7 @@ p {
 }
 
 /* skills */
-#skills_div{
+#skills_div {
     background-color: var(--color5);
     border-radius: 20px;
     padding: 3rem;
@@ -203,6 +238,6 @@ p {
     color: var(--color3);
 }
 
-#services_card div{
+#services_card div {
     padding: 2rem;
 }
