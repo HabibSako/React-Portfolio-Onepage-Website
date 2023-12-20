@@ -4,7 +4,7 @@
 Bu react projesi basit bir one page web sitesidir. İletişim bilgilerinin bulunduğu, CV
 niteliğinde kısaca kişinin tanıtımını yapmaktadır.
 #
-![Uygulama Ekran Görüntüsü](https://github.com/HabibSako/React-Portfolio-Onepage-Website/blob/master/OnePageWebsite/src/image/background_img/header3.jpg)
+![Uygulama Ekran Görüntüsü](https://github.com/HabibSako/React-Portfolio-Onepage-Website/blob/master/OnePageWebsite/src/image/img/Ekran%20g%C3%B6r%C3%BCnt%C3%BC1.png)
 #
 ## Gereksinim ve Teknolojiler
 - Editör (Visual Studio Code)
@@ -87,12 +87,6 @@ curl --location --request PUT 'https://657ae489394ca9e4af12fa6f.mockapi.io/api/v
 }'
 ```
 
-
-  
-## Ekran Görüntüleri
-
-![Uygulama Ekran Görüntüsü](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
-
   
 #
 # Nasıl Kurulur?
@@ -127,7 +121,7 @@ npm start
 This react project is a simple one page website. It contains contact information, CV
 briefly introduces the person.
 #
-![Application Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+![Application Screenshot](https://github.com/HabibSako/React-Portfolio-Onepage-Website/blob/master/OnePageWebsite/src/image/img/Ekran%20g%C3%B6r%C3%BCnt%C3%BC1.png)
 #
 ## Requirements and Technologies
 - Editor (Visual Studio Code)
@@ -208,14 +202,6 @@ curl --location --request PUT 'https://657ae489394ca9e4af12fa6f.mockapi.io/api/v
 }'
 ```
 
-
-
-  
-## Screenshots
-
-![Application Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
-
-  
 ## How to Install?
 
 ### Git
