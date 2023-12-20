@@ -2,7 +2,7 @@
 Project Made Date: December 10 Sunday 2023
 Project Made By: Habib Şako
 Project Made For: 2023
-Project Made With: HTML, CSS, JS, React, Node.js;
+Project Made With: HTML, CSS, JS, React;
 Project Version: v1.0.0
 Project Status: Completed
 Project Description: This is a one page blog website
@@ -49,13 +49,6 @@ ul {
   list-style-type: none;
 }
 
-/* p {
-  font-size: 1.2rem;
-  text-align: justify;
-  padding-left: 1.2rem;
-  padding-right: 1.2rem;
-} */
-
 img {
   max-width: 100%;
   height: auto;
@@ -82,12 +75,12 @@ i {
   display: -webkit-box;
   -webkit-line-clamp: 4;
   -webkit-box-orient: vertical;
-
   display: -moz-box;
   /* firefox,safari, chrome,opera,Edge */
   -moz-line-clamp: 4;
   -moz-box-orient: vertical;
 }
+
 .line-clamp5 {
   overflow: hidden;
   display: -webkit-box;

@@ -141,7 +141,6 @@ class Header extends Component {
                                         title="password"
                                         placeholder={this.props.t('password')}
                                     />
-
                                     <hr className='mt-5' />
                                     <button className="btn btn-outline-danger mt-2 me-2" type="reset">
                                         {this.props.t('reset')}
@@ -263,11 +262,3 @@ export default withTranslation()(Header)
 Header.defaultProps = {
     url: "http://localhost:3000"
 }
-
-// Props Default Value Validation
-// Header.propTypes = {
-//     url: PropTypes.string.isRequired,
-// }
-
-
-

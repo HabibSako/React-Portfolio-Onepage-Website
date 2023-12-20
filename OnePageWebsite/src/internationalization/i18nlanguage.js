@@ -45,7 +45,11 @@ i18n.use(initReactI18next).init({
                 'send': 'Send',
                 'register_list': "Register List",
                 'register_update': "Register Update",
-                'register_view': "Register View"
+                'register_view': "Register View",
+                'hi': 'Hi',
+                'i': 'I am',
+                'computer_eng': 'Computer Engineering',
+                'cv': 'CV',
             }
         },
         tr:
@@ -89,8 +93,11 @@ i18n.use(initReactI18next).init({
                 'send': 'Gönder',
                 'register_list': "Kayıt Listesi",
                 'register_update': "Kayıt Güncelle",
-                'register_view': "Kayıtları Göster"
-
+                'register_view': "Kayıtları Göster",
+                'hi': 'Merhaba',
+                'i': 'Ben',
+                'computer_eng': 'Bilgisayar Mühendisliği',
+                'cv': 'Özgeçmiş',
             }
         }
     },

@@ -57,7 +57,6 @@ class Footer extends Component {
                                     }}
                                 />
                             </div>
-
                         </div>
                         {/*Grid row*/}
                         <div className="row">
@@ -169,7 +168,6 @@ class Footer extends Component {
                                                 placeholder={this.props.t('content')}
                                             />
                                         </div>
-
                                         <div className="form-group mt-4 mb-4">
                                             <input type="reset" id="reset" name="Temizle" value={this.props.t('reset')} className="btn btn-danger me-3" />
                                             <button type="submit" id="submit" name="submit" className="btn btn-primary">{this.props.t('send')} </button>
@@ -195,10 +193,6 @@ class Footer extends Component {
                     {/* Copyright */}
                 </footer>
                 {/* Footer */}
-
-
-
-
             </React.Fragment>
         ); //end retur
     } //end render

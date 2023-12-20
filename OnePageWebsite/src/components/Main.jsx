@@ -43,10 +43,10 @@ class Main extends Component {
                     <div className="jumbotron text-white">
                         <div className="container">
                             <div className="home-content">
-                                <h3>Merhaba, ben</h3>
+                                <h3>{this.props.t('hi')}, {this.props.t('i')}</h3>
                                 <h1>Habib  <i>Ş</i>ako</h1>
                                 <p>
-                                    Bilgisayar Mühendisliği 4/4
+                                    {this.props.t('computer_eng')} 4/4
                                 </p>
                                 <div className="social-media" id='header_icons'>
                                     {/* linkedin */}
@@ -68,7 +68,7 @@ class Main extends Component {
 
                                 </div>
                                 <a href="https://dosya.co/o85nmpahgjw6/cv.pdf.html" className="btn_cv">
-                                    Özgeçmiş
+                                    {this.props.t('cv')}
                                 </a>
                             </div>
                         </div>
@@ -215,9 +215,7 @@ class Main extends Component {
                             </div>
                             {/*Grid column*/}
                         </div>
-                    </div>
-
-                    {/* end skills */}
+                    </div>{/* end skills */}
 
                     {/* start blog */}
                     <section id="blog_id">

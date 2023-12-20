@@ -19,22 +19,27 @@ header {
     z-index: -1;
     opacity: 5;
 }
+
 #header h3{
     color: var(--color4);
 }
+
 #header h1{
     font-size: 4rem;
     color: var(--color4);
 }
+
 #header p{
     font-size: 1.rem;
     color: var(--color4);
 }
+
 #header h1 i{
     text-decoration: none;
     font-size: 4rem;
     color: var(--color3);
 }
+
 /* icons */
 #header_icons{
     width: 25%;
@@ -42,6 +47,7 @@ header {
     align-items: center;
     margin-top: 2rem;
 }
+
 #header_icons a{
     display: inline-flex;
     text-decoration: none;
@@ -55,6 +61,7 @@ header {
     transition: 1s;
     margin: 0.4rem;
 }
+
 #header_icons a i{
     font-size: 2.3rem;
     color:var(--color4);
@@ -63,12 +70,15 @@ header {
     border-radius: 5px;
     padding: 0.3rem;
 }
+
 #header_icons a i:hover{
     color:var(--color3);
 }
+
 #header_icons a:hover{
     box-shadow: 0 .2rem .5rem var(--color3);
 }
+
 /* cv button */
 .btn_cv{
     display: inline-block;
@@ -84,10 +94,12 @@ header {
     font-size: 1rem;
     transition: 1s;
 }
+
 .btn_cv:hover{
     box-shadow: 0 .2rem .5rem var(--color3);
     color: var(--color3)!important;
 }
+
 /* MAIN SECTION */
 /*SERVICES*/
 #services_id {
@@ -149,6 +161,7 @@ p {
 #education_card{
     text-align: center;
 }
+
 #education_card div{
     border: 1px solid var(--color3);
     border-radius: 10px;
@@ -183,7 +196,6 @@ p {
     line-height: 3rem;
     border-radius: 15%;
     cursor: pointer;
-    
 }
 
 #backToTop:hover {
@@ -193,6 +205,4 @@ p {
 
 #services_card div{
     padding: 2rem;
- 
-    
 }
