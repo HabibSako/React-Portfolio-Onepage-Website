@@ -12,6 +12,10 @@ import Header from './components/Header';
 import Main from './components/Main';
 import Footer from './components/Footer';
 import BlogPage from './components/blog/BlogPage';
+import RegisterList from './components/register/RegisterList';
+import RegisterUpdate from './components/register/RegisterUpdate';
+import RegisterCreate from './components/register/RegisterCreate';
+import RegisterView from './components/register/RegisterView';
 
 // CLASS
 class RouterBlog extends Component {
@@ -35,8 +39,12 @@ class RouterBlog extends Component {
                         {/* Blog */}
                         <Route path={"/blog"} element={<BlogPage />} />
 
-                        
- 
+                        {/* Register */}
+                        <Route path={"/register/list"} element={<RegisterList />} />
+                        <Route path={"/register/create"} element={<RegisterCreate />} />
+                        <Route path={`/register/view/:id`} element={<RegisterView />} />
+                        <Route path={"/register/update/:id"} element={<RegisterUpdate />} />
+
                         {/*OTHER PATH*/}
                         {/* Bad Request */}
                         <Route path={"*"} element={<Navigate to="/" />} />

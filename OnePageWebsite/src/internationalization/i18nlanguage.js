@@ -15,7 +15,7 @@ i18n.use(initReactI18next).init({
                 'languages': 'Languages',
                 'services': 'Services',
                 'social_media': 'Social Media',
-                'username': 'Name - Surname',
+                'username': 'Name',
                 'email_address': 'Email Address',
                 'subject': 'Subject',
                 'content': 'Content',
@@ -37,6 +37,15 @@ i18n.use(initReactI18next).init({
                 'analytical_thinking': 'Analytical Thinking',
                 'problem_solving': 'Problem Solving',
                 'English': 'b1-b2 Level English',
+                'login': 'Login',
+                'register': 'Register',
+                'reset': 'Reset',
+                'surname': 'Surname',
+                'password': 'Password',
+                'send': 'Send',
+                'register_list': "Register List",
+                'register_update': "Register Update",
+                'register_view': "Register View"
             }
         },
         tr:
@@ -50,7 +59,7 @@ i18n.use(initReactI18next).init({
                 'languages': 'Diller',
                 'services': 'Hizmetler',
                 'social_media': 'Sosyal Medya',
-                'username': 'Ad - Soyad',
+                'username': 'Adınız',
                 'email_address': 'Email',
                 'subject': 'Konu',
                 'content': 'İçerik',
@@ -72,7 +81,16 @@ i18n.use(initReactI18next).init({
                 'analytical_thinking': 'Analitik Düşünme',
                 'problem_solving': 'Sorun Çözme',
                 'English': 'b1-b2 Seviye İngilizce',
-            
+                'login': 'Giriş',
+                'register': 'Kayıt Ol',
+                'reset': 'Temizle',
+                'surname': 'Soyadınız',
+                'password': 'Şifre',
+                'send': 'Gönder',
+                'register_list': "Kayıt Listesi",
+                'register_update': "Kayıt Güncelle",
+                'register_view': "Kayıtları Göster"
+
             }
         }
     },

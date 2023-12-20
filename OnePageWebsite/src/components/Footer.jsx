@@ -127,7 +127,7 @@ class Footer extends Component {
                                                 type="text"
                                                 className="form-control"
                                                 id="uname"
-                                                placeholder="kullanıcı adınız"
+                                                placeholder={this.props.t('username')}
                                                 title='kullanıcı adınız'
                                             />
                                         </div>
@@ -140,7 +140,7 @@ class Footer extends Component {
                                                 className="form-control"
                                                 id="uemail"
                                                 name="uemail"
-                                                placeholder="Email adresiniz"
+                                                placeholder={this.props.t('email_address')}
                                                 title="Email adresiniz"
                                             />
                                         </div>
@@ -153,7 +153,7 @@ class Footer extends Component {
                                                 className="form-control"
                                                 id="usubject"
                                                 name="usubject"
-                                                placeholder="Konu"
+                                                placeholder={this.props.t('subject')}
                                                 title="Email Konusu"
                                             />
                                         </div>
@@ -166,12 +166,13 @@ class Footer extends Component {
                                                 id="exampleFormControlTextarea1"
                                                 rows={3}
                                                 defaultValue={""}
+                                                placeholder={this.props.t('content')}
                                             />
                                         </div>
 
                                         <div className="form-group mt-4 mb-4">
-                                            <input type="reset" id="reset" name="reset" value="Temizle" className="btn btn-danger me-3" />
-                                            <button type="submit" id="submit" name="submit" className="btn btn-primary">Gönder </button>
+                                            <input type="reset" id="reset" name="Temizle" value={this.props.t('reset')} className="btn btn-danger me-3" />
+                                            <button type="submit" id="submit" name="submit" className="btn btn-primary">{this.props.t('send')} </button>
                                         </div>
                                     </form>
                                 </div>

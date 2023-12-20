@@ -222,7 +222,7 @@ class Main extends Component {
                     {/* start blog */}
                     <section id="blog_id">
                         <div className="blog_service">
-                            <h2 className='text-center'>{this.props.t('projects')}</h2>
+                            <h2 className='text-center text-dark'>{this.props.t('projects')}</h2>
                             <div className="container">
                                 <div className="row">
                                     <div className="col-xs-12 col-sm-12 col-md-6 col-lg-4 col-xxl-3">

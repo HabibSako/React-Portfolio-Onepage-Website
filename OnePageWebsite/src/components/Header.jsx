@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 // Resuability
 import OtherLanguageReusability from '../internationalization/OtherLanguageReusability';
 import { withTranslation } from 'react-i18next';
+import { Link } from 'react-router-dom';
 
 // Dark Mode
 import './DarkMode/dark.css';
@@ -37,116 +38,123 @@ class Header extends Component {
         /* Return */
         return (
             <React.Fragment>
-                {/* start Login Off Canvas Login */}
-                <div className="container-fluid ">
-                    <div
-                        className="offcanvas offcanvas-start bg-dark text-white"
-                        tabIndex={-1}
-                        id="offcanvas_login"
-                        aria-labelledby="offcanvasNavbarLabel"
-                    >
-                        <div className="offcanvas-header">
-                            <h5 className="offcanvas-title text-danger" id="offcanvasNavbarLabel">
-                                Login
-                            </h5>
-                            <button
-                                type="button"
-                                className="btn-close text-reset"
-                                data-bs-dismiss="offcanvas"
-                                aria-label="Close"
-                            />
-                        </div>
-                        <div className="offcanvas-body">
-                            <form>
-                                <input
-                                    className="form-control me-2 mb-2"
-                                    type="email"
-                                    placeholder="email address"
+                {/* start Modal login */}
+                <div
+                    className="modal fade"
+                    id="modal_login"
+                    tabIndex={-1}
+                    aria-labelledby="exampleModalLabel"
+                    aria-hidden="true"
+                >
+                    <div className="modal-dialog modal-md  modal-dialog-centered text-end">
+                        <div className="modal-content">
+                            <div className="modal-header ">
+                                <h5 className="modal-title " id="exampleModalLabel">
+                                    {this.props.t('login')}
+                                </h5>
+                                <button
+                                    type="button"
+                                    className="btn-close"
+                                    data-bs-dismiss="modal"
+                                    aria-label="Close"
                                 />
-                                <input
-                                    className="form-control me-2 mb-2"
-                                    type="password"
-                                    placeholder="password"
-                                />
-                                <button className="btn btn-outline-danger mt-2 me-2" type="reset">
-                                    Temizle
-                                </button>
-                                <button className="btn btn-outline-primary mt-2" type="submit">
-                                    Giriş Yap
-                                </button>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-                {/* end  Login Off Canvas Login */}
-
-                {/* start Register Off Canvas Register */}
-                <div className="container-fluid ">
-                    <div
-                        className="offcanvas offcanvas-end bg-dark text-white"
-                        tabIndex={-1}
-                        id="offcanvas_register"
-                        aria-labelledby="offcanvasNavbarLabel"
-                    >
-                        <div className="offcanvas-header">
-                            <h5 className="offcanvas-title text-danger" id="offcanvasNavbarLabel">
-                                Register
-                            </h5>
-                            <button
-                                type="button"
-                                className="btn-close text-reset"
-                                data-bs-dismiss="offcanvas"
-                                aria-label="Close"
-                            />
-                        </div>
-                        <div className="offcanvas-body">
-                            <form>
-                                <input
-                                    className="form-control me-2 mb-2"
-                                    type="uname"
-                                    id="uname"
-                                    name="uname"
-                                    title="username"
-                                    placeholder="Username"
-                                />
-
-                                <input
-                                    className="form-control me-2 mb-2"
-                                    type="usurname"
-                                    id="uname"
-                                    name="uname"
-                                    title="username"
-                                    placeholder="Surname"
-                                />
-
-                                <input
-                                    className="form-control me-2 mb-2"
-                                    type="email"
-                                    id="uemail"
-                                    name="uemail"
-                                    title="email"
-                                    placeholder="email address"
-                                />
-                                <input
-                                    className="form-control me-2 mb-2"
-                                    type="password"
-                                    id="upassword"
-                                    name="upassword"
-                                    title="password"
-                                    placeholder="password"
-                                />
-                                <button className="btn btn-outline-danger mt-2 me-2" type="reset">
-                                    Temizle
-                                </button>
-                                <button className="btn btn-outline-primary mt-2" type="submit">
-                                    Giriş Yap
-                                </button>
-                            </form>
+                            </div>
+                            <div className="modal-body">
+                                <form>
+                                    <input
+                                        className="form-control me-2 mb-2"
+                                        type="email"
+                                        placeholder={this.props.t('email')}
+                                    />
+                                    <input
+                                        className="form-control me-2 mb-2"
+                                        type="password"
+                                        placeholder={this.props.t('password')}
+                                    />
+                                    <hr className='mt-5' />
+                                    <button className="btn btn-outline-danger mt-2 me-2" type="reset">
+                                        {this.props.t('reset')}
+                                    </button>
+                                    <button className="btn btn-success mt-2" type="submit">
+                                        {this.props.t('login')}
+                                    </button>
+                                </form>
+                            </div>
                         </div>
                     </div>
                 </div>
-                {/* end Register Off Canvas Login */}
+                {/* end Modal login */}
+                {/* start Modal Register */}
+                <div
+                    className="modal fade"
+                    id="modal_register"
+                    tabIndex={-1}
+                    aria-labelledby="exampleModalLabel"
+                    aria-hidden="true"
+                >
+                    <div className="modal-dialog modal-md  modal-dialog-centered text-end">
+                        <div className="modal-content">
+                            <div className="modal-header ">
+                                <h5 className="modal-title " id="exampleModalLabel">
+                                    {this.props.t('register')}
+                                </h5>
+                                <button
+                                    type="button"
+                                    className="btn-close"
+                                    data-bs-dismiss="modal"
+                                    aria-label="Close"
+                                />
+                            </div>
+                            <div className="modal-body">
+                                <form>
+                                    <input
+                                        className="form-control me-2 mb-2"
+                                        type="uname"
+                                        id="uname"
+                                        name="uname"
+                                        title="username"
+                                        placeholder={this.props.t('username')}
+                                    />
 
+                                    <input
+                                        className="form-control me-2 mb-2"
+                                        type="usurname"
+                                        id="uname"
+                                        name="uname"
+                                        title="username"
+                                        placeholder={this.props.t('surname')}
+                                    />
+
+                                    <input
+                                        className="form-control me-2 mb-2"
+                                        type="email"
+                                        id="uemail"
+                                        name="uemail"
+                                        title="email"
+                                        placeholder={this.props.t('email')}
+                                    />
+                                    <input
+                                        className="form-control me-2 mb-2"
+                                        type="password"
+                                        id="upassword"
+                                        name="upassword"
+                                        title="password"
+                                        placeholder={this.props.t('password')}
+                                    />
+
+                                    <hr className='mt-5' />
+                                    <button className="btn btn-outline-danger mt-2 me-2" type="reset">
+                                        {this.props.t('reset')}
+                                    </button>
+                                    <button className="btn btn-success mt-2" type="submit">
+                                        {this.props.t('register')}
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                {/* end Modal Register */}
 
                 {/* start Navbar */}
                 <nav
@@ -157,7 +165,7 @@ class Header extends Component {
                             className="navbar-brand"
                             href={this.props.url}>
                             <i class="fa-regular fa-paper-plane"></i>
-                            
+
                         </a>
                         <button
                             className="navbar-toggler d-lg-none"
@@ -197,24 +205,13 @@ class Header extends Component {
                                         {this.props.t('contact')}
                                     </a>
                                 </li>
-                                {/* <li className="nav-item dropdown">
-                                    <a
-                                        className="nav-link dropdown-toggle"
-                                        href="#"
-                                        id="dropdownId"
-                                        data-bs-toggle="dropdown"
-                                        aria-haspopup="true"
-                                        aria-expanded="false"
-                                    >
-                                        {t('languages')}
+                                <li className="nav-item">
+                                    <a className="nav-link" href="#">
+                                        <Link to="/register/list" className="dropdown-item" href="#">
+                                            {t('register_list')}
+                                        </Link>
                                     </a>
-                                     <div className="dropdown-menu" aria-labelledby="dropdownId">
-                                        <OtherLanguageReusability />
-                                         <a className="dropdown-item" href="#">
-                                            Action 1
-                                        </a> 
-                                    </div> 
-                                </li> */}
+                                </li>
                             </ul>
 
                             {/* Dark Mode */}
@@ -230,23 +227,23 @@ class Header extends Component {
                             </ul>
 
 
-                            <ul id="navbar_first_right">
+                            <ul>
                                 <li>
                                     <a href="#"
                                         type="button"
-                                        data-bs-toggle="offcanvas"
-                                        data-bs-target="#offcanvas_login"
-                                        aria-controls="offcanvasNavbar" >
+                                        data-bs-toggle="modal"
+                                        data-bs-target="#modal_login"
+                                        aria-controls="modalNavbar" >
                                         <i className="fa-solid fa-key"></i>
                                     </a>
 
                                     <a href="#"
                                         type="button"
-                                        data-bs-toggle="offcanvas"
-                                        data-bs-target="#offcanvas_register"
-                                        aria-controls="offcanvasNavbar" >
+                                        data-bs-toggle="modal"
+                                        data-bs-target="#modal_register"
+                                        aria-controls="modalNavbar" >
                                         <i className="fa-solid fa-lock mx-3"></i>
-                                        </a>
+                                    </a>
                                 </li>
                             </ul>
                         </div>
