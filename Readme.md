@@ -4,7 +4,7 @@
 Bu react projesi basit bir one page web sitesidir. İletişim bilgilerinin bulunduğu, CV
 niteliğinde kısaca kişinin tanıtımını yapmaktadır.
 #
-![Uygulama Ekran Görüntüsü](https://github.com/HabibSako/React-Portfolio-Onepage-Website/blob/master/OnePageWebsite/src/image/img/Ekran%20g%C3%B6r%C3%BCnt%C3%BC1.png)
+![Uygulama Ekran Görüntüsü](https://gitlab.koddeposu.gov.tr/btkakademifrontend/btk-bitirme-projesi-one-page-website/-/blob/master/OnePageWebsite/src/image/img/Ekran%20g%C3%B6r%C3%BCnt%C3%BC1.png)
 #
 ## Gereksinim ve Teknolojiler
 - Editör (Visual Studio Code)
@@ -121,7 +121,7 @@ npm start
 This react project is a simple one page website. It contains contact information, CV
 briefly introduces the person.
 #
-![Application Screenshot](https://github.com/HabibSako/React-Portfolio-Onepage-Website/blob/master/OnePageWebsite/src/image/img/Ekran%20g%C3%B6r%C3%BCnt%C3%BC1.png)
+![Application Screenshot](https://gitlab.koddeposu.gov.tr/btkakademifrontend/btk-bitirme-projesi-one-page-website/-/blob/master/OnePageWebsite/src/image/img/Ekran%20g%C3%B6r%C3%BCnt%C3%BC1.png)
 #
 ## Requirements and Technologies
 - Editor (Visual Studio Code)
