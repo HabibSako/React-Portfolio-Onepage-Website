@@ -161,37 +161,6 @@ p {
 
 }
 
-@media screen and (max-width: 576px) {
-    #about_id {
-        height: 50rem;
-        padding: 0;
-        padding-top: 2rem;
-    }
-
-    header {
-        height: 100vh;
-        padding-top: 6rem;
-        background-position: 20%;
-    }
-
-    
-
-    
-}
-
-@media screen and (min-width: 576px) and (max-width: 999px) {
-    #about_id {
-        height: 30rem;
-        padding: 0;
-        padding-top: 2rem;
-    }
-    header {
-        padding-top: 6rem;
-        background-position: 30%;
-    }
-
-}
-
 /* EDUCATION */
 #education_card {
     text-align: center;
@@ -240,4 +209,30 @@ p {
 
 #services_card div {
     padding: 2rem;
+}
+
+/* responsive design */
+@media screen and (max-width: 576px) {
+    #about_id {
+        height: 50rem;
+        padding: 0;
+        padding-top: 2rem;
+    }
+    header {
+        height: 100vh;
+        padding-top: 6rem;
+        background-position: 20%;
+    }
+}
+
+@media screen and (min-width: 576px) and (max-width: 999px) {
+    #about_id {
+        height: 30rem;
+        padding: 0;
+        padding-top: 2rem;
+    }
+    header {
+        padding-top: 6rem;
+        background-position: 30%;
+    }
 }

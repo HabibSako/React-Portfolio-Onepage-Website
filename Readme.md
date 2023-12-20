@@ -4,7 +4,7 @@
 Bu react projesi basit bir one page web sitesidir. İletişim bilgilerinin bulunduğu, CV
 niteliğinde kısaca kişinin tanıtımını yapmaktadır.
 #
-![Uygulama Ekran Görüntüsü](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+![Uygulama Ekran Görüntüsü](https://github.com/HabibSako/React-Portfolio-Onepage-Website/blob/master/OnePageWebsite/src/image/background_img/header3.jpg)
 #
 ## Gereksinim ve Teknolojiler
 - Editör (Visual Studio Code)
