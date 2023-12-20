@@ -42,7 +42,7 @@ function RegisterCreate({ t, i18n, props }) {
 
   // Persist Mock api Link
   const persistMockApiLink = () => {
-    return "https://657ae453394ca9e4af12f9c6.mockapi.io/api/v1/blog/register"
+    return "https://657ae489394ca9e4af12fa6f.mockapi.io/api/v1/blog/register"
   }
 
 
