@@ -65,9 +65,10 @@ class Main extends Component {
                                     <a href="mailto:habibsako@outlook.com" >
                                     <i class="fa-solid fa-envelope"></i>
                                     </a>
-
                                 </div>
-                                
+                                <a href="#" className="btn_cv">
+                                    {this.props.t('cv')}
+                                </a>
                             </div>
                         </div>
                     </div>
