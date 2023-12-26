@@ -36,34 +36,45 @@ class Footer extends Component {
                 <footer className="bg-dark text-white text-md-start" id="contact_id" >
                     {/* Grid container */}
                     <div className="container p-4" id='footer'>
-                        {/* MAP */}
-                        <div className="">
-                            <div className="mapouter">
-                                <div className="gmap_canvas">
-                                    <iframe
-                                        className="gmap_iframe"
-                                        frameBorder={0}
-                                        scrolling="no"
-                                        marginHeight={0}
-                                        marginWidth={0}
-                                        src="https://maps.google.com/maps?width=600&height=400&hl=en&q=malatya&t=&z=14&ie=UTF8&iwloc=B&output=embed"
-                                    />
-                                    <a href="https://embed-googlemap.com">embed google map</a>
-                                </div>
-                                <style
-                                    dangerouslySetInnerHTML={{
-                                        __html:
-                                            ".mapouter{position:relative;text-align:center;width:100%;height:400px;}.gmap_canvas {overflow:hidden;background:none!important;width:100%;height:400px;}.gmap_iframe {width:100%!important;height:400px!important;}"
-                                    }}
-                                />
-                            </div>
-                        </div>
+                        
                         {/*Grid row*/}
                         <div className="row">
                             {/*Grid column*/}
                             <div className="col-lg-6 col-md-12 mb-4 mt-4 mb-md-0">
-                                <h5 className="text-uppercase mb-5">{this.props.t('social_media')}</h5>
+                                <h5 className="text-uppercase mb-5">{this.props.t('contact_me')}</h5>
                                 <ul className="list-unstyled mb-0">
+                                <li>
+                                        {/* MAİL */}
+                                        <a
+                                            data-mdb-ripple-init=""
+                                            className="btn text-white btn-floating m-1"
+                                            style={{ backgroundColor: "#0066CC" }}
+                                            href="mailto:habibsako@outlook.com"
+                                            target="_blank" rel="noopener noreferrer"
+                                            role="button"
+                                        >
+                                          <i class="fa-solid fa-envelope"></i>  
+                                        </a>
+                                        <a href="mailto:habibsako@outlook.com">
+                                            habibsako@outlook.com
+                                        </a>
+                                    </li>
+                                    <li>
+                                        {/* Telefon */}
+                                        <a
+                                            data-mdb-ripple-init=""
+                                            className="btn text-white btn-floating m-1"
+                                            style={{ backgroundColor: "#5C8374" }}
+                                            
+                                            target="_blank" rel="noopener noreferrer"
+                                            role="button"
+                                        >
+                                          <i class="fa-solid fa-mobile-screen"></i>  
+                                        </a>
+                                        <a >
+                                            +90 (534) 265 83 42
+                                        </a>
+                                    </li>
                                     <li>
                                         {/* Linkedin */}
                                         <a
@@ -71,11 +82,12 @@ class Footer extends Component {
                                             className="btn text-white btn-floating m-1 mt-1"
                                             style={{ backgroundColor: "#0082ca" }}
                                             href="https://www.linkedin.com/in/habibsako/"
+                                            target="_blank" rel="noopener noreferrer"
                                             role="button"
                                         >
                                             <i className="fab fa-linkedin-in" />
                                         </a>
-                                        <a href="https://www.linkedin.com/in/habibsako/">
+                                        <a href="https://www.linkedin.com/in/habibsako/" target="_blank" rel="noopener noreferrer">
                                             linkedin.com/in/habibsako
                                         </a>
                                     </li>
@@ -86,11 +98,12 @@ class Footer extends Component {
                                             className="btn text-white btn-floating m-1"
                                             style={{ backgroundColor: "#333333" }}
                                             href="https://github.com/HabibSako"
+                                            target="_blank" rel="noopener noreferrer"
                                             role="button"
                                         >
                                             <i className="fab fa-github" />
                                         </a>
-                                        <a href="https://github.com/HabibSako">
+                                        <a href="https://github.com/HabibSako" target="_blank" rel="noopener noreferrer">
                                             github.com/HabibSako
                                         </a>
                                     </li>
@@ -102,14 +115,16 @@ class Footer extends Component {
                                             className="btn text-white btn-floating m-1"
                                             style={{ backgroundColor: "#dd4b39" }}
                                             href="https://gitlab.com/habibsako"
+                                            target="_blank" rel="noopener noreferrer"
                                             role="button"
                                         >
                                             <i className="fab fa-gitlab" />
                                         </a>
-                                        <a href="https://gitlab.com/habibsako">
+                                        <a href="https://gitlab.com/habibsako" target="_blank" rel="noopener noreferrer">
                                             gitlab.com/habibsako
                                         </a>
                                     </li>
+                                    
                                 </ul>
                             </div>
                             {/*Grid column*/}
@@ -178,6 +193,28 @@ class Footer extends Component {
                             {/*Grid column*/}
                         </div>
                         {/*Grid row*/}
+                        {/* MAP */}
+                        <div className="">
+                            <div className="mapouter">
+                                <div className="gmap_canvas">
+                                    <iframe
+                                        className="gmap_iframe"
+                                        frameBorder={0}
+                                        scrolling="no"
+                                        marginHeight={0}
+                                        marginWidth={0}
+                                        src="https://maps.google.com/maps?width=600&height=400&hl=en&q=malatya&t=&z=14&ie=UTF8&iwloc=B&output=embed"
+                                    />
+                                    <a href="https://embed-googlemap.com">embed google map</a>
+                                </div>
+                                <style
+                                    dangerouslySetInnerHTML={{
+                                        __html:
+                                            ".mapouter{position:relative;text-align:center;width:100%;height:400px;}.gmap_canvas {overflow:hidden;background:none!important;width:100%;height:400px;}.gmap_iframe {width:100%!important;height:400px!important;}"
+                                    }}
+                                />
+                            </div>
+                        </div>
                     </div>
                     {/* Grid container */}
                     {/* Copyright */}

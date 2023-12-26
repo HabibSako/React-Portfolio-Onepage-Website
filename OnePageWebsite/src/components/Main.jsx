@@ -50,26 +50,24 @@ class Main extends Component {
                                 </p>
                                 <div className="social-media" id='header_icons'>
                                     {/* linkedin */}
-                                    <a href="https://www.linkedin.com/in/habibsako/">
+                                    <a href="https://www.linkedin.com/in/habibsako/" target="_blank" rel="noopener noreferrer">
                                         <i className="fa-brands fa-linkedin"></i>
                                     </a>
                                     {/* github */}
-                                    <a href="https://github.com/HabibSako">
+                                    <a href="https://github.com/HabibSako" target="_blank" rel="noopener noreferrer">
                                         <i className="fa-brands fa-github "></i>
                                     </a>
                                     {/* gitlab */}
-                                    <a href="https://gitlab.com/habibsako">
+                                    <a href="https://gitlab.com/habibsako" target="_blank" rel="noopener noreferrer">
                                         <i className="fa-brands fa-square-gitlab"></i>
                                     </a>
                                     {/* mail */}
-                                    <a href="mailto:habibsako@outlook.com">
-                                        <i class="fa-solid fa-paper-plane"></i>
+                                    <a href="mailto:habibsako@outlook.com" >
+                                    <i class="fa-solid fa-envelope"></i>
                                     </a>
 
                                 </div>
-                                <a href="https://dosya.co/o85nmpahgjw6/cv.pdf.html" className="btn_cv">
-                                    {this.props.t('cv')}
-                                </a>
+                                
                             </div>
                         </div>
                     </div>

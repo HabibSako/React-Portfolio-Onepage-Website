@@ -190,18 +190,18 @@ class Header extends Component {
                                     </a>
                                 </li>
                                 <li className="nav-item">
-                                    <a className="nav-link" href="#blog_id">
-                                        {this.props.t('blog')}
-                                    </a>
-                                </li>
-                                <li className="nav-item">
                                     <a className="nav-link" href="#about_id">
                                         {this.props.t('about')}
                                     </a>
                                 </li>
                                 <li className="nav-item">
+                                    <a className="nav-link" href="#blog_id">
+                                        {this.props.t('blog')}
+                                    </a>
+                                </li>
+                                <li className="nav-item">
                                     <a className="nav-link" href="#contact_id">
-                                        {this.props.t('contact')}
+                                        {this.props.t('contact_header')}
                                     </a>
                                 </li>
                                 <li className="nav-item">
