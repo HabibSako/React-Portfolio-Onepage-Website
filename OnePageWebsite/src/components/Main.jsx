@@ -63,12 +63,9 @@ class Main extends Component {
                                     </a>
                                     {/* mail */}
                                     <a href="mailto:habibsako@outlook.com" >
-                                    <i class="fa-solid fa-envelope"></i>
+                                        <i class="fa-solid fa-envelope"></i>
                                     </a>
                                 </div>
-                                <a href="#" className="btn_cv">
-                                    {this.props.t('cv')}
-                                </a>
                             </div>
                         </div>
                     </div>
@@ -89,25 +86,26 @@ class Main extends Component {
                                     <div className="col-xs-12 col-sm-12 col-md-6 col-lg-4 col-xxl-3">
                                         <i class="fa-brands fa-react"></i>
                                         <h4>{this.props.t('web')}</h4>
-                                        <p className='line-clamp4'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo nam ratione necessitatibus dicta eos deleniti consequatur. Nostrum corrupti, dicta, vel consequuntur error, recusandae itaque nobis ducimus neque possimus aliquid odit?</p>
+                                        <p className='line-clamp10'>Web geliştirme (React JS) ile ilgileniyorum. Yaptığım web projelerde genel olarak Html, CSS, JavaScript dillerini ve bazı projelerde ek olarak React JS kütüphanesini  kullanıyorum.</p>
                                     </div>
 
                                     <div className="col-xs-12 col-sm-12 col-md-6 col-lg-4 col-xxl-3">
                                         <i className="fa-brands fa-ubuntu" style={{ color: "green" }}></i>
                                         <h4>{this.props.t('linux')}</h4>
-                                        <p className='line-clamp4'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo nam ratione necessitatibus dicta eos deleniti consequatur. Nostrum corrupti, dicta, vel consequuntur error, recusandae itaque nobis ducimus neque possimus aliquid odit?</p>
+                                        <p className='line-clamp10'>Linux temel kullanımına hakimim. Ubuntu işletim sisteminde deneyimlerim oldu. Ubuntu üzerinde flask kütüphanesini kullanarak API uygulama yazımı, public bir API'den veri çekilmesi ve uygulamanın docker üzerinden kaldırılması gibi görevleri yaptım.</p>
                                     </div>
 
                                     <div className="col-xs-12 col-sm-12 col-md-6 col-lg-4 col-xxl-3">
                                         <i className="fa-brands fa-java" style={{ color: "red" }}></i>
                                         <h4>{this.props.t('software_development')}</h4>
-                                        <p className='line-clamp4'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo nam ratione necessitatibus dicta eos deleniti consequatur. Nostrum corrupti, dicta, vel consequuntur error, recusandae itaque nobis ducimus neque possimus aliquid odit?</p>
+                                        <p className='line-clamp10'> Bugüne kadar çeşitli dillerde eğitim aldım ve çalışmlar yaptım. Değişen tek şey kullandığın dilin yazım biçimi. Bu yüzden algoritmanın mantığını öğrenmek benim önceliklerimden...</p>
                                     </div>
 
                                     <div className="col-xs-12 col-sm-12 col-md-6 col-lg-4 col-xxl-3">
                                         <i className="fa-solid fa-database" style={{ color: "darkgoldenrod" }}></i>
                                         <h4>{this.props.t('database')}</h4>
-                                        <p className='line-clamp4'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo nam ratione necessitatibus dicta eos deleniti consequatur. Nostrum corrupti, dicta, vel consequuntur error, recusandae itaque nobis ducimus neque possimus aliquid odit?</p>
+                                        <p className='line-clamp10'>
+                                            Toplamda 54 oturum ve 140 saatten oluşan bu yoğun program ile yapay zeka alanında ilerlemeyi ve başarılı olmayı hedefliyorum.</p>
                                     </div>
                                 </div> {/* end row */}
                             </div>{/* end container */}
@@ -226,11 +224,9 @@ class Main extends Component {
                                         <div class="card mb-4">
                                             <img class="card-img-top" src={Design} alt="Title" />
                                             <div class="card-body">
-                                                <h4 class="card-title">Html5</h4>
-                                                <p class="card-text line-clamp5"> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam, facilis odio esse incidunt eligendi sed nostrum error iure modi suscipit itaque at beatae voluptas optio, ipsam atque tempora corporis aut.
-                                                    Eligendi, facere ex. Assumenda expedita quibusdam, distinctio corrupti possimus alias quidem ad provident vitae praesentium consectetur quisquam explicabo voluptatibus, fugit ipsa. Quas, vero? Qui, in praesentium quas repellat enim fuga.
-                                                    Sequi reiciendis dolore eos perspiciatis vitae, facilis repudiandae veniam natus nulla consequatur eveniet vero explicabo ullam. Voluptates repellendus est beatae. Quisquam corrupti harum fugiat nostrum dolores omnis perferendis. Incidunt, eligendi.
-                                                    Adipisci, dignissimos culpa minima asperiores qui iusto. Dicta voluptatum cupiditate quod eligendi, dignissimos vero repellat odit odio facere consequatur, maxime doloribus doloremque aspernatur omnis nihil iste modi expedita praesentium amet!</p>
+                                                <h4 class="card-title">Veri Madenciliği Yöntemleri ile Akciğer Kanser Tespiti</h4>
+                                                <p class="card-text line-clamp5">Bu projenin amacı kişinin sigara kullanımı, alkol tüketimi, yaşam kalitesi ve yaşına göre akciğer kanserine yakalanıp yakalanmadığını belirlemektir.
+                                                <br/></p><button className="btn btn-primary text-center"><a className="detay" target="_blank" href="https://github.com/HabibSako/Veri-Madenciligi-ile-Kanser-Tespiti">Detaylar</a></button>
                                             </div>
                                         </div>
                                     </div>
@@ -239,11 +235,9 @@ class Main extends Component {
                                         <div class="card">
                                             <img class="card-img-top" src={BestDesign} alt="Title" />
                                             <div class="card-body">
-                                                <h4 class="card-title">Html5, CSS3</h4>
-                                                <p class="card-text line-clamp5">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam, facilis odio esse incidunt eligendi sed nostrum error iure modi suscipit itaque at beatae voluptas optio, ipsam atque tempora corporis aut.
-                                                    Eligendi, facere ex. Assumenda expedita quibusdam, distinctio corrupti possimus alias quidem ad provident vitae praesentium consectetur quisquam explicabo voluptatibus, fugit ipsa. Quas, vero? Qui, in praesentium quas repellat enim fuga.
-                                                    Sequi reiciendis dolore eos perspiciatis vitae, facilis repudiandae veniam natus nulla consequatur eveniet vero explicabo ullam. Voluptates repellendus est beatae. Quisquam corrupti harum fugiat nostrum dolores omnis perferendis. Incidunt, eligendi.
-                                                    Adipisci, dignissimos culpa minima asperiores qui iusto. Dicta voluptatum cupiditate quod eligendi, dignissimos vero repellat odit odio facere consequatur, maxime doloribus doloremque aspernatur omnis nihil iste modi expedita praesentium amet!</p>
+                                                <h4 class="card-title">Açık Kaynak Yazılım Geliştirme Dersi</h4>
+                                                <p class="card-text line-clamp5"> Python kütüphanelerinden olan flask ve flask-Restful kullanarak yapmış olduğum projelerdir. Local API yazmak, public API'den veri çekmek ve yazdırmak, yapılan uygulamanın docker üzerinde çalıştırılması yaptığım birkaç uygulama. 
+                                                <br/></p><button className="btn btn-primary text-center"><a className="detay" target="_blank" href="https://github.com/HabibSako/Rest-API">Detaylar</a></button>
                                             </div>
                                         </div>
                                     </div>
@@ -251,11 +245,9 @@ class Main extends Component {
                                         <div class="card">
                                             <img class="card-img-top" src={Design2} alt="Title" />
                                             <div class="card-body">
-                                                <h4 class="card-title">Html5,CSS, JS</h4>
-                                                <p class="card-text line-clamp5">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam, facilis odio esse incidunt eligendi sed nostrum error iure modi suscipit itaque at beatae voluptas optio, ipsam atque tempora corporis aut.
-                                                    Eligendi, facere ex. Assumenda expedita quibusdam, distinctio corrupti possimus alias quidem ad provident vitae praesentium consectetur quisquam explicabo voluptatibus, fugit ipsa. Quas, vero? Qui, in praesentium quas repellat enim fuga.
-                                                    Sequi reiciendis dolore eos perspiciatis vitae, facilis repudiandae veniam natus nulla consequatur eveniet vero explicabo ullam. Voluptates repellendus est beatae. Quisquam corrupti harum fugiat nostrum dolores omnis perferendis. Incidunt, eligendi.
-                                                    Adipisci, dignissimos culpa minima asperiores qui iusto. Dicta voluptatum cupiditate quod eligendi, dignissimos vero repellat odit odio facere consequatur, maxime doloribus doloremque aspernatur omnis nihil iste modi expedita praesentium amet!</p>
+                                                <h4 class="card-title">DevOps Teknolojileriyle CI/CD Pipeline</h4>
+                                                <p class="card-text line-clamp5"> Yazmış olduğum container-based yapıdaki kodun docker, snyk, dockerhub teknolojilerini kullanarak jenkins üzerinde CI/CD sürecinin gerçekleştirilmesidir. Projeyle ilgili detaylı döküman github repoda bulunmaktadır.
+                                                <br/></p><button className="btn btn-primary text-center"><a className="detay" target="_blank" href="https://github.com/HabibSako/CI-CD-Pipeline">Detaylar</a></button>
                                             </div>
                                         </div>
                                     </div>
@@ -263,11 +255,9 @@ class Main extends Component {
                                         <div class="card">
                                             <img class="card-img-top" src={Design3} alt="Title" />
                                             <div class="card-body">
-                                                <h4 class="card-title">ReactJS</h4>
-                                                <p class="card-text line-clamp5">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam, facilis odio esse incidunt eligendi sed nostrum error iure modi suscipit itaque at beatae voluptas optio, ipsam atque tempora corporis aut.
-                                                    Eligendi, facere ex. Assumenda expedita quibusdam, distinctio corrupti possimus alias quidem ad provident vitae praesentium consectetur quisquam explicabo voluptatibus, fugit ipsa. Quas, vero? Qui, in praesentium quas repellat enim fuga.
-                                                    Sequi reiciendis dolore eos perspiciatis vitae, facilis repudiandae veniam natus nulla consequatur eveniet vero explicabo ullam. Voluptates repellendus est beatae. Quisquam corrupti harum fugiat nostrum dolores omnis perferendis. Incidunt, eligendi.
-                                                    Adipisci, dignissimos culpa minima asperiores qui iusto. Dicta voluptatum cupiditate quod eligendi, dignissimos vero repellat odit odio facere consequatur, maxime doloribus doloremque aspernatur omnis nihil iste modi expedita praesentium amet!</p>
+                                                <h4 class="card-title">ReactJS - OnePage Kişisel Web Sitesi</h4>
+                                                <p class="card-text line-clamp5">ReactJs kullanarak görmüş olduğunuz web sitesinin kaynak kodlarına github hesabımdan ulaşabilirsiniz. Site hakkındaki öneri ve değerlendirmenizi bana habibsako@outlook.com adresinden iletebilirsiniz.
+                                                <br/></p><button className="btn btn-primary text-center"><a className="detay" target="_blank" href="https://github.com/HabibSako/React-Portfolio-Onepage-Website">Detaylar</a></button>
                                             </div>
                                         </div>
                                     </div>
@@ -275,11 +265,9 @@ class Main extends Component {
                                         <div class="card">
                                             <img class="card-img-top" src={Design4} alt="Title" />
                                             <div class="card-body">
-                                                <h4 class="card-title">Python</h4>
-                                                <p class="card-text line-clamp5">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam, facilis odio esse incidunt eligendi sed nostrum error iure modi suscipit itaque at beatae voluptas optio, ipsam atque tempora corporis aut.
-                                                    Eligendi, facere ex. Assumenda expedita quibusdam, distinctio corrupti possimus alias quidem ad provident vitae praesentium consectetur quisquam explicabo voluptatibus, fugit ipsa. Quas, vero? Qui, in praesentium quas repellat enim fuga.
-                                                    Sequi reiciendis dolore eos perspiciatis vitae, facilis repudiandae veniam natus nulla consequatur eveniet vero explicabo ullam. Voluptates repellendus est beatae. Quisquam corrupti harum fugiat nostrum dolores omnis perferendis. Incidunt, eligendi.
-                                                    Adipisci, dignissimos culpa minima asperiores qui iusto. Dicta voluptatum cupiditate quod eligendi, dignissimos vero repellat odit odio facere consequatur, maxime doloribus doloremque aspernatur omnis nihil iste modi expedita praesentium amet!</p>
+                                                <h4 class="card-title">K-means Algoritması ve KNN Algoritması</h4>
+                                                <p class="card-text line-clamp5"> Python dilini kullanarak veri madenciliği dersi için yapmış olduğum çalışmalardır. Yakınlık olarak öklid uzaklığı kullanılmıştır. 
+                                                <br/></p><button className="btn btn-primary text-center"><a className="detay" target="_blank" href="https://github.com/HabibSako/Veri-madenciligi-Data-Mining">Detaylar</a></button>
                                             </div>
                                         </div>
                                     </div>
@@ -287,11 +275,10 @@ class Main extends Component {
                                         <div class="card">
                                             <img class="card-img-top" src={Wordpress} alt="Title" />
                                             <div class="card-body">
-                                                <h4 class="card-title">Kotlin</h4>
-                                                <p class="card-text line-clamp5">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam, facilis odio esse incidunt eligendi sed nostrum error iure modi suscipit itaque at beatae voluptas optio, ipsam atque tempora corporis aut.
-                                                    Eligendi, facere ex. Assumenda expedita quibusdam, distinctio corrupti possimus alias quidem ad provident vitae praesentium consectetur quisquam explicabo voluptatibus, fugit ipsa. Quas, vero? Qui, in praesentium quas repellat enim fuga.
-                                                    Sequi reiciendis dolore eos perspiciatis vitae, facilis repudiandae veniam natus nulla consequatur eveniet vero explicabo ullam. Voluptates repellendus est beatae. Quisquam corrupti harum fugiat nostrum dolores omnis perferendis. Incidunt, eligendi.
-                                                    Adipisci, dignissimos culpa minima asperiores qui iusto. Dicta voluptatum cupiditate quod eligendi, dignissimos vero repellat odit odio facere consequatur, maxime doloribus doloremque aspernatur omnis nihil iste modi expedita praesentium amet!</p>
+                                                <h4 class="card-title">AntikApp-Web </h4>
+                                                <p class="card-text line-clamp5">Antika ürünlerin, koleksiyon eşyalarının web sitesi üzerinden sergilenmesi, alım-satımı ve bu
+                                                    ürünlerin tarihsel veya koleksiyonel değerlerinin bulunduğu web tabanlı bir uygulama projesidir.
+                                                    <br/></p><button className="btn btn-primary text-center"><a className="detay" target="_blank" href="https://github.com/HabibSako/AntikApp-Web">Detaylar</a></button>
                                             </div>
                                         </div>
                                     </div>
@@ -299,26 +286,18 @@ class Main extends Component {
                                         <div class="card">
                                             <img class="card-img-top" src={Design3} alt="Title" />
                                             <div class="card-body">
-                                                <h4 class="card-title">C</h4>
-                                                <p class="card-text line-clamp5">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam, facilis odio esse incidunt eligendi sed nostrum error iure modi suscipit itaque at beatae voluptas optio, ipsam atque tempora corporis aut.
-                                                    Eligendi, facere ex. Assumenda expedita quibusdam, distinctio corrupti possimus alias quidem ad provident vitae praesentium consectetur quisquam explicabo voluptatibus, fugit ipsa. Quas, vero? Qui, in praesentium quas repellat enim fuga.
-                                                    Sequi reiciendis dolore eos perspiciatis vitae, facilis repudiandae veniam natus nulla consequatur eveniet vero explicabo ullam. Voluptates repellendus est beatae. Quisquam corrupti harum fugiat nostrum dolores omnis perferendis. Incidunt, eligendi.
-                                                    Adipisci, dignissimos culpa minima asperiores qui iusto. Dicta voluptatum cupiditate quod eligendi, dignissimos vero repellat odit odio facere consequatur, maxime doloribus doloremque aspernatur omnis nihil iste modi expedita praesentium amet!</p>
+                                                <h4 class="card-title">Runner Game - Castle Run</h4>
+                                                <p class="card-text line-clamp5"> Unity kullanılarak yapılmış, basit ve sade oyun projesidir. Oyunumuz şehri kuşatılan
+                                                    şovalyemizin şehir surlarından
+                                                    belirlenen süre içinde şehir
+                                                    kapısına ulaşarak savaş
+                                                    meydanına yetişmesini konu
+                                                    alır.
+                                                    <br/></p><button className="btn btn-primary text-center"><a className="detay" target="_blank" href="https://github.com/HabibSako/Castle-Run---Unity">Detaylar</a></button>
                                             </div>
                                         </div>
                                     </div>
-                                    <div className="col-xs-12 col-sm-12 col-md-6 col-lg-4 col-xxl-3">
-                                        <div class="card">
-                                            <img class="card-img-top" src={Design2} alt="Title" />
-                                            <div class="card-body">
-                                                <h4 class="card-title">Java</h4>
-                                                <p class="card-text line-clamp5">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam, facilis odio esse incidunt eligendi sed nostrum error iure modi suscipit itaque at beatae voluptas optio, ipsam atque tempora corporis aut.
-                                                    Eligendi, facere ex. Assumenda expedita quibusdam, distinctio corrupti possimus alias quidem ad provident vitae praesentium consectetur quisquam explicabo voluptatibus, fugit ipsa. Quas, vero? Qui, in praesentium quas repellat enim fuga.
-                                                    Sequi reiciendis dolore eos perspiciatis vitae, facilis repudiandae veniam natus nulla consequatur eveniet vero explicabo ullam. Voluptates repellendus est beatae. Quisquam corrupti harum fugiat nostrum dolores omnis perferendis. Incidunt, eligendi.
-                                                    Adipisci, dignissimos culpa minima asperiores qui iusto. Dicta voluptatum cupiditate quod eligendi, dignissimos vero repellat odit odio facere consequatur, maxime doloribus doloremque aspernatur omnis nihil iste modi expedita praesentium amet!</p>
-                                            </div>
-                                        </div>
-                                    </div>
+
 
 
 

@@ -204,13 +204,13 @@ class Header extends Component {
                                         {this.props.t('contact_header')}
                                     </a>
                                 </li>
-                                <li className="nav-item">
+                                {/* <li className="nav-item">
                                     <a className="nav-link" href="#">
                                         <Link to="/register/list" className="dropdown-item" href="#">
                                             {t('register_list')}
                                         </Link>
                                     </a>
-                                </li>
+                                </li> */}
                             </ul>
 
                             {/* Dark Mode */}
@@ -227,7 +227,7 @@ class Header extends Component {
 
 
                             <ul>
-                                <li>
+                                {/* <li>
                                     <a href="#"
                                         type="button"
                                         data-bs-toggle="modal"
@@ -243,7 +243,7 @@ class Header extends Component {
                                         aria-controls="modalNavbar" >
                                         <i className="fa-solid fa-lock mx-3"></i>
                                     </a>
-                                </li>
+                                </li> */}
                             </ul>
                         </div>
                     </div>
