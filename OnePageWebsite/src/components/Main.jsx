@@ -46,7 +46,7 @@ class Main extends Component {
                                 <h3>{this.props.t('hi')}, {this.props.t('i')}</h3>
                                 <h1>Habib  <i>Ş</i>ako</h1>
                                 <p>
-                                    {this.props.t('computer_eng')} 4/4
+                                    {this.props.t('computer_eng')}
                                 </p>
                                 <div className="social-media" id='header_icons'>
                                     {/* linkedin */}
