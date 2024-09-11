@@ -21,6 +21,7 @@ class Main extends Component {
     // constructor
     constructor(props) {
         super(props);
+        
         // STATE
         this.state = {
 
